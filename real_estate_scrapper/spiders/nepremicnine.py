@@ -10,7 +10,7 @@ now = datetime.datetime.now()
 class NepremicnineSpider(scrapy.Spider):
     name = 'nepremicnine'
     allowed_domains = ['nepremicnine.net']
-    start_urls = ["https://www.nepremicnine.net/oglasi-prodaja/ljubljana-mesto/stanovanje/cena-od-50000-do-130000-eur/"]
+    start_urls = ["https://www.nepremicnine.net/oglasi-prodaja/ljubljana-mesto/stanovanje/cena-od-50000-do-135000-eur/"]
 
     def parse(self, response):
         for estate in self.parse_estate_listing(response):
@@ -27,7 +27,7 @@ class NepremicnineSpider(scrapy.Spider):
             loader.add_xpath('floor', './/span[@class="atribut"]/strong/text()')
             relative_url = estate.xpath('.//a/@href').extract_first()
             loader.add_value('url', response.urljoin(relative_url))
-            loader.add_value('date', now.strftime("%d.%m.%Y ")
+            loader.add_value('parsed', now.strftime("%d.%m.%Y "))
             yield loader.load_item()
         next_page_url = response.urljoin(response.xpath('//a[@class="next"]/@href').extract_first())
         if next_page_url:
