@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'real_estate_scrapper.pipelines.RealEstateScrapperPipeline': 300,
+#    'real_estate_scrapper.pipelines.JsonWriterPipeline': 800,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

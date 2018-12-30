@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy import Request
-from real_estates_scrapper.items import Estate
-from real_estate_scrapper.itemLoaders import NepremicnineEsteateLoader
+from real_estate_scrapper.items import Estate
+from real_estate_scrapper.itemLoaders import NepremicnineEstateLoader
+import datetime
+
+now = datetime.datetime.now()
 
 class NepremicnineSpider(scrapy.Spider):
     name = 'nepremicnine'
@@ -16,15 +19,16 @@ class NepremicnineSpider(scrapy.Spider):
     def parse_estate_listing(self, response):
         estates = response.xpath('//div[contains(@class, "oglas_container")]')
         for estate in estates:
-            loader = NepremicnineEstateLoader(item = Estate(), response = estate)
+            loader = NepremicnineEstateLoader(item = Estate(), selector = estate)
             loader.add_xpath('location', './/span[@class="title"]/text()')
-            loader.add_.xpath('price', './/span[@class="cena"]/text()')
+            loader.add_xpath('price', './/span[@class="cena"]/text()')
             loader.add_xpath('size', './/span[@class="velikost"]/text()')
             loader.add_xpath('built', './/span[@class="atribut leto"]/strong/text()')
             loader.add_xpath('floor', './/span[@class="atribut"]/strong/text()')
-            loader.add_value('url', response.request.url)
-            loader.add_xpath('url', './/a/@href')
+            relative_url = estate.xpath('.//a/@href').extract_first()
+            loader.add_value('url', response.urljoin(relative_url))
+            loader.add_value('date', now.strftime("%d.%m.%Y ")
             yield loader.load_item()
-         next_page_url = response.urljoin(response.xpath('//a[@class="next"]/@href').extract_first())
+        next_page_url = response.urljoin(response.xpath('//a[@class="next"]/@href').extract_first())
         if next_page_url:
             yield Request(next_page_url, callback=self.parse_estate_listing)

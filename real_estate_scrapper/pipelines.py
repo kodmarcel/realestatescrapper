@@ -6,42 +6,17 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import json
-import geocoder
-from itertools import combinations
 
-kongresni_location = geocoder.osm("Kongresni trg")
-country = "Slovenija"
-ciry = "Ljubljana"
+save_file = "scraped_data/estates.json"
 
-class RealEstateScrapperPipeline(object):
+class JsonWriterPipeline(object):
+    def open_spider(self, spider):
+        self.file = open(save_file, 'w')
+    
+    def close_spider(self, spider):
+        self.file.close()
+
     def process_item(self, item, spider):
+        line = json.dumps(dict(item)) + "\n"
+        self.file.write(line)
         return item
-
-class EstatesPipeline(object):
-
-
-    def process_item(self, item, spider):
-       location = item['location'] 
-       distance = getDistance(location, kongresni_location)
-
-
-
-    def find_location(location):
-        loc = geocoder.osm(location)
-        if loc.country !=i country:
-            locations = (location + ", " + city).replace(".", ",").split(",")
-            for r in range(len(locations), 0, -1):
-                possible = combinations(locations,r)
-                for p in possible:
-                    loc = geocoder.osm(",".join(p))
-                    if loc.country == country:
-                        return loc
-        return loc
-
-    def getDistance(location, center):
-        if loc.country == 'Slovenija':
-            distance = geocoder.distance(kongresni_location, loc)
-        else:
-            distance = -1
-
-

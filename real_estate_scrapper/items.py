@@ -7,13 +7,6 @@
 
 import scrapy
 
-
-class RealEstateScrapperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
-
-
 class Estate(scrapy.Item):
     location = scrapy.Field()
     price = scrapy.Field()
@@ -22,4 +15,4 @@ class Estate(scrapy.Item):
     renewed = scrapy.Field()
     url = scrapy.Field()
     size = scrapy.Field()
-    distance = scrapy.Field()
+    date = scrapy.Field()
