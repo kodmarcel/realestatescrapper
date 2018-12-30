@@ -1,0 +1,323 @@
+Report on the day 29.12.2018:
+Got 32 hits
+
+
+Stanovanje: 
+Točke: -86.11054766734279, 
+Cena: 89000.0, 
+Velikost: 49.3, 
+€/m2: 1805.2738336713996, 
+Nadstropje: 1, 
+Razdalja: 5.037451731106834, Lokacija: savlje, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/savlje-stanovanje_6143667/, 
+Zgrajeno: -1, Obnovnljeno: 1997, 
+
+Stanovanje: 
+Točke: -101.30275229357801, 
+Cena: 126000.0, 
+Velikost: 76.3, 
+€/m2: 1651.3761467889908, 
+Nadstropje: -1, 
+Razdalja: 3.090167820952902, Lokacija: lj. šiška, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6191034/, 
+Zgrajeno: -1, Obnovnljeno: 2015, 
+
+Stanovanje: 
+Točke: -106.27192982456143, 
+Cena: 129000.0, 
+Velikost: 68.4, 
+€/m2: 1885.9649122807016, 
+Nadstropje: 1, 
+Razdalja: 4.292914864127206, Lokacija: lj. vič, škofljica, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-skofljica-stanovanje_6224533/, 
+Zgrajeno: 2008, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -122.33145048814504, 
+Cena: 105000.0, 
+Velikost: 43.02, 
+€/m2: 2440.725244072524, 
+Nadstropje: -1, 
+Razdalja: 3.4595413106747226, Lokacija: koseze, ulica franca mlakarja 6, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/koseze-ulica-franca-mlakarja-6-stanovanje_6230261/, 
+Zgrajeno: 1975, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -138.5694006309148, 
+Cena: 129000.0, 
+Velikost: 63.4, 
+€/m2: 2034.7003154574134, 
+Nadstropje: -1, 
+Razdalja: 3.090167820952902, Lokacija: lj. šiška, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6233214/, 
+Zgrajeno: 1959, Obnovnljeno: 1990, 
+
+Stanovanje: 
+Točke: -142.00573770491803, 
+Cena: 129800.0, 
+Velikost: 61.0, 
+€/m2: 2127.8688524590166, 
+Nadstropje: -1, 
+Razdalja: 3.764144688659787, Lokacija: vrhovci, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/vrhovci-stanovanje_6229854/, 
+Zgrajeno: 1960, Obnovnljeno: 2007, 
+
+Stanovanje: 
+Točke: -148.0, 
+Cena: 125000.0, 
+Velikost: 50.0, 
+€/m2: 2500.0, 
+Nadstropje: -1, 
+Razdalja: 3.090167820952902, Lokacija: lj. šiška, dravlje, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-dravlje-stanovanje_6223527/, 
+Zgrajeno: 1989, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -149.03475336322867, 
+Cena: 129000.0, 
+Velikost: 44.6, 
+€/m2: 2892.3766816143498, 
+Nadstropje: 4, 
+Razdalja: 1.2798645584469042, Lokacija: lj. bežigrad, vojkova cesta, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-vojkova-cesta-stanovanje_6213233/, 
+Zgrajeno: 1964, Obnovnljeno: 2013, 
+
+Stanovanje: 
+Točke: -151.031914893617, 
+Cena: 130000.0, 
+Velikost: 47.0, 
+€/m2: 2765.9574468085107, 
+Nadstropje: -1, 
+Razdalja: 1.2798645584469042, Lokacija: lj. bežigrad, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6234223/, 
+Zgrajeno: 1984, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -151.71014492753625, 
+Cena: 130000.0, 
+Velikost: 55.2, 
+€/m2: 2355.072463768116, 
+Nadstropje: 4, 
+Razdalja: 5.996925323290391, Lokacija: šentvid, selanov trg, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/sentvid-selanov-trg-stanovanje_6209840/, 
+Zgrajeno: 1990, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -155.27777777777777, 
+Cena: 129000.0, 
+Velikost: 54.0, 
+€/m2: 2388.8888888888887, 
+Nadstropje: 3, 
+Razdalja: 4.5, Lokacija: lj. bežigrad, črnuče, koroškega bataljona, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-crnuce-koroskega-bataljona-stanovanje_6087934/, 
+Zgrajeno: 1974, Obnovnljeno: 2010, 
+
+Stanovanje: 
+Točke: -156.6125792811839, 
+Cena: 115000.0, 
+Velikost: 47.3, 
+€/m2: 2431.2896405919664, 
+Nadstropje: -1, 
+Razdalja: 5.996925323290391, Lokacija: šentvid, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/sentvid-stanovanje_6229734/, 
+Zgrajeno: 1965, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -157.8478260869565, 
+Cena: 123000.0, 
+Velikost: 46.0, 
+€/m2: 2673.913043478261, 
+Nadstropje: 4, 
+Razdalja: 3.090167820952902, Lokacija: lj. šiška, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6229348/, 
+Zgrajeno: 1960, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -157.94114688128775, 
+Cena: 129000.0, 
+Velikost: 49.7, 
+€/m2: 2595.5734406438633, 
+Nadstropje: 4, 
+Razdalja: 3.090167820952902, Lokacija: lj. šiška, šišenska cesta, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-sisenska-cesta-stanovanje_6230491/, 
+Zgrajeno: 1960, Obnovnljeno: 2012, 
+
+Stanovanje: 
+Točke: -158.02272727272725, 
+Cena: 127000.0, 
+Velikost: 44.0, 
+€/m2: 2886.3636363636365, 
+Nadstropje: -1, 
+Razdalja: 1.2798645584469042, Lokacija: lj. bežigrad, blizu fakultet, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-blizu-fakultet-stanovanje_6226516/, 
+Zgrajeno: 1960, Obnovnljeno: 2011, 
+
+Stanovanje: 
+Točke: -158.86363636363637, 
+Cena: 118000.0, 
+Velikost: 44.0, 
+€/m2: 2681.818181818182, 
+Nadstropje: 2, 
+Razdalja: 4.292914864127206, Lokacija: lj. vič, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-stanovanje_6233229/, 
+Zgrajeno: 1973, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -159.531914893617, 
+Cena: 130000.0, 
+Velikost: 47.0, 
+€/m2: 2765.9574468085107, 
+Nadstropje: 3, 
+Razdalja: 1.2798645584469042, Lokacija: lj. bežigrad, linhartova, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-linhartova-stanovanje_6211214/, 
+Zgrajeno: -1, Obnovnljeno: 2004, 
+
+Stanovanje: 
+Točke: -160.81930693069307, 
+Cena: 128000.0, 
+Velikost: 50.5, 
+€/m2: 2534.6534653465346, 
+Nadstropje: -1, 
+Razdalja: 5.996925323290391, Lokacija: šentvid, blizu celovške, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/sentvid-blizu-celovske-stanovanje_6212920/, 
+Zgrajeno: 2006, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -162.31958762886597, 
+Cena: 129000.0, 
+Velikost: 48.5, 
+€/m2: 2659.7938144329896, 
+Nadstropje: -1, 
+Razdalja: 1.2798645584469042, Lokacija: lj. bežigrad, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6162114/, 
+Zgrajeno: -1, Obnovnljeno: 2007, 
+
+Stanovanje: 
+Točke: -163.44114688128775, 
+Cena: 129000.0, 
+Velikost: 49.7, 
+€/m2: 2595.5734406438633, 
+Nadstropje: 4, 
+Razdalja: 3.090167820952902, Lokacija: lj. šiška, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6230489/, 
+Zgrajeno: 1960, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -163.44114688128775, 
+Cena: 129000.0, 
+Velikost: 49.7, 
+€/m2: 2595.5734406438633, 
+Nadstropje: 4, 
+Razdalja: 3.090167820952902, Lokacija: lj. šiška, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6230501/, 
+Zgrajeno: 1960, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -164.97454545454542, 
+Cena: 109990.0, 
+Velikost: 44.0, 
+€/m2: 2499.7727272727275, 
+Nadstropje: -1, 
+Razdalja: 4.292914864127206, Lokacija: lj. center, bližina ukc, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-center-blizina-ukc-stanovanje_6214267/, 
+Zgrajeno: -1, Obnovnljeno: 1990, 
+
+Stanovanje: 
+Točke: -167.9190342647359, 
+Cena: 116300.0, 
+Velikost: 49.03, 
+€/m2: 2372.017132367938, 
+Nadstropje: -1, 
+Razdalja: 4.292914864127206, Lokacija: lj. center, trnovski pristan 6, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-center-trnovski-pristan-6-stanovanje_6230527/, 
+Zgrajeno: -1, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -173.77272727272725, 
+Cena: 116000.0, 
+Velikost: 44.0, 
+€/m2: 2636.3636363636365, 
+Nadstropje: -1, 
+Razdalja: 4.292914864127206, Lokacija: lj. center, hradeckega, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-center-hradeckega-stanovanje_6223405/, 
+Zgrajeno: -1, Obnovnljeno: 2016, 
+
+Stanovanje: 
+Točke: -183.30612244897958, 
+Cena: 130000.0, 
+Velikost: 49.0, 
+€/m2: 2653.061224489796, 
+Nadstropje: -1, 
+Razdalja: 2.876578422596374, Lokacija: lj. vič, viška c., 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-viska-c-stanovanje_6212594/, 
+Zgrajeno: -1, Obnovnljeno: 2008, 
+
+Stanovanje: 
+Točke: -185.23333333333335, 
+Cena: 129000.0, 
+Velikost: 45.0, 
+€/m2: 2866.6666666666665, 
+Nadstropje: -1, 
+Razdalja: 2.912851376501778, Lokacija: zg. šiška, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/zg-siska-stanovanje_6224361/, 
+Zgrajeno: 1961, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -187.40701559020044, 
+Cena: 127000.0, 
+Velikost: 44.9, 
+€/m2: 2828.5077951002227, 
+Nadstropje: 6, 
+Razdalja: 2.0646787455877216, Lokacija: savsko naselje, bližina krožišča žale, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/savsko-naselje-blizina-krozisca-zale-stanovanje_6234055/, 
+Zgrajeno: 1958, Obnovnljeno: 2008, 
+
+Stanovanje: 
+Točke: -784.6348914112286, 
+Cena: 130000.0, 
+Velikost: 68.0, 
+€/m2: 1911.764705882353, 
+Nadstropje: -1, 
+Razdalja: 6.48811361999464, Lokacija: črnuče, lj., 
+Link: https://www.nepremicnine.net/oglasi-prodaja/crnuce-lj-stanovanje_6182292/, 
+Zgrajeno: 1986, Obnovnljeno: -1, 
+
+Stanovanje: 
+Točke: -805.3166630771968, 
+Cena: 119000.0, 
+Velikost: 44.9, 
+€/m2: 2650.3340757238307, 
+Nadstropje: 2, 
+Razdalja: 6.522659949257491, Lokacija: črnuče, polanškova ulica, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/crnuce-polanskova-ulica-stanovanje_6211600/, 
+Zgrajeno: 1986, Obnovnljeno: 2008, 
+
+Stanovanje: 
+Točke: -877.0692935547225, 
+Cena: 85000.0, 
+Velikost: 77.0, 
+€/m2: 1103.8961038961038, 
+Nadstropje: -1, 
+Razdalja: 8.638615013469304, Lokacija: šmartno pod šmarno goro, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/smartno-pod-smarno-goro-stanovanje_6233743/, 
+Zgrajeno: 1950, Obnovnljeno: 2006, 
+
+Stanovanje: 
+Točke: -918.1448863636364, 
+Cena: 119500.0, 
+Velikost: 70.4, 
+€/m2: 1697.4431818181818, 
+Nadstropje: -1, 
+Razdalja: 8, Lokacija: lj. bežigrad, črnuče - ježa, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-crnuce-jeza-stanovanje_6166008/, 
+Zgrajeno: 1946, Obnovnljeno: 2010, 
+
+Stanovanje: 
+Točke: -6023.224556678106, 
+Cena: 105000.0, 
+Velikost: 43.02, 
+€/m2: 2440.725244072524, 
+Nadstropje: 2, 
+Razdalja: 58.90893106189961, Lokacija: koseze, 
+Link: https://www.nepremicnine.net/oglasi-prodaja/koseze-stanovanje_6232626/, 
+Zgrajeno: 1975, Obnovnljeno: -1, 
