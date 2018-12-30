@@ -14,7 +14,7 @@ class ApartmentsDecoder(json.JSONDecoder):
         try:
             if "link" in object and "price" in object:
                 return Apartment(object["link"],object["price"],object["size"],object["location"],object["floor"],object["built"],object["renewed"],object["distance"])
-        except Exception as ež:
+        except Exception as e:
             print(e)
             print("Couldnt desetialize: ")
             print(object)
