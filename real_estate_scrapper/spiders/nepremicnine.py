@@ -26,7 +26,7 @@ old_urls = get_old_urls(old_estates_path)
 class NepremicnineSpider(scrapy.Spider):
     name = 'nepremicnine'
     allowed_domains = ['nepremicnine.net']
-    start_urls = ["https://www.nepremicnine.net/oglasi-prodaja/ljubljana-mesto/stanovanje/cena-od-50000-do-135000-eur/"]
+    start_urls = ["https://www.nepremicnine.net/oglasi-prodaja/ljubljana-mesto/stanovanje/cena-od-50000-do-135000-eur,velikost-od-40-m2/"]
 
     def parse(self, response):
         for estate in self.parse_estate_listing(response):

@@ -125,8 +125,8 @@ def sort_estates(estates, field):
 def grade_estate(estate):
     points = 0 
     price_points = (130 - estate['price']/1000)*price_ratio / (130-70)
-    size_points = estate['size'] - 43
-    built_points = (estate['built']-1964)*5/(2000-1964)
+    size_points = estate['size'] - 43 * size_ratio /(90-43)
+    built_points = max(0,(estate['built']-1964)*built_ratio/(2000-1964))
     distance_points = (6-estate['distance'])*distance_ratio/6
     floor = estate['floor']
     floor_points = 10
@@ -134,9 +134,9 @@ def grade_estate(estate):
         floor_points = 5
     elif floor == 'VP':
         floor_points = 3.5
-    elif floor == 'P':
+    elif floor == 'P' or floor == 'Pritličje':
         floor_points = 2.5 
-    elif floor == 'PK':
+    elif floor == 'PK' or floor == 'Polklet':
         floor_points = 0
     return points + price_points + size_points + built_points + distance_points + floor_points 
 
@@ -180,7 +180,6 @@ for estate in estates:
         if estate['url'] == old_estate['url'] and estate['location'] == old_estate['location'] and estate['price'] == old_estate['price']:
             estate['found_location'] = old_estate['found_location']
             estate['distance'] = old_estate['distance']
-            estate['points'] = old_estate['points']
             estate['parsed'] = old_estate['parsed']
             old_estates.remove(old_estate)
             found = True
@@ -196,9 +195,9 @@ for estate in estates:
         estate['found_location'] = found_location.address
         distance = get_distance(found_location, center)
         estate['distance'] = distance
-        points = grade_estate(estate)
-        estate['points'] = points 
         now = time.time()
+    points = grade_estate(estate)
+    estate['points'] = points 
     estate['psm'] = estate['price']/estate['size']
 
 print("Sorting estates")
