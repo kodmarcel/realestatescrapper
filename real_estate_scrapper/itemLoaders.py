@@ -21,3 +21,10 @@ class NepremicnineEstateLoader(ItemLoader):
     built_in = parseInt
     renewed_in = parseInt
     price_in = parsePrice 
+
+class MojikvadratiEstateLoader(ItemLoader):
+    default_output_processor = TakeFirst()
+    size_in = parseSize
+    built_in = parseInt
+    renewed_in = parseInt
+    price_in = parsePrice 

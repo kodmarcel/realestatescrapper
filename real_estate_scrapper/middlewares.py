@@ -50,10 +50,6 @@ class RealEstateScrapperSpiderMiddleware(object):
 
         # Must return only requests (not items).
         for r in start_requests:
-            spider.logger.info('Request: %s' % r)
-            if('mojikvadrati' in r.url):
-                print('ADDING COOKIE')
-                r.cookie = {"size" :"43-500", "price":"0-130000"}
             yield r
 
     def spider_opened(self, spider):
