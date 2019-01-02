@@ -6,6 +6,21 @@ from real_estate_scrapper.itemLoaders import NepremicnineEstateLoader
 import datetime
 
 now = datetime.datetime.now()
+old_estates_path = "scraped_data/nepremicnine.csv"
+
+def get_old_urls(path):
+    links = []
+    try:   
+        with open(path, 'r') as infile:
+            reader = csv.DictReader(infile)
+            for line in reader:
+                links.append(line['url'])
+    except:
+        pass    
+    return links
+
+
+old_urls = get_old_urls(old_estates_path)
 
 class NepremicnineSpider(scrapy.Spider):
     name = 'nepremicnine'
@@ -19,13 +34,15 @@ class NepremicnineSpider(scrapy.Spider):
     def parse_estate_listing(self, response):
         estates = response.xpath('//div[contains(@class, "oglas_container")]')
         for estate in estates:
+            relative_url = estate.xpath('.//a/@href').extract_first()
+            if response.urljoin(relative_url) in old_urls:
+                continue
             loader = NepremicnineEstateLoader(item = Estate(), selector = estate)
             loader.add_xpath('location', './/span[@class="title"]/text()')
             loader.add_xpath('price', './/span[@class="cena"]/text()')
             loader.add_xpath('size', './/span[@class="velikost"]/text()')
             loader.add_xpath('built', './/span[@class="atribut leto"]/strong/text()')
             loader.add_xpath('floor', './/span[@class="atribut"]/strong/text()')
-            relative_url = estate.xpath('.//a/@href').extract_first()
             loader.add_value('url', response.urljoin(relative_url))
             loader.add_value('parsed', now.strftime("%d.%m.%Y "))
             yield loader.load_item()

@@ -3,8 +3,10 @@ import scrapy
 from real_estate_scrapper.items import Estate
 from real_estate_scrapper.itemLoaders import MojikvadratiEstateLoader
 import datetime
+import csv
 
 now=datetime.datetime.now()
+old_estates_path = "scraped_data/mojikvadrati.csv"
 
 post_headers = {
 "Host":"mojikvadrati.com",
@@ -20,6 +22,21 @@ post_headers = {
 }
 
 post_body = "offer_type=1&property_type=5&size=43-500&price=0-135000&location%5B%5D=13%3A%3A0%3A%3A0&save_criteria=0&filter_name=&criteria_id=&search=1&option=advanced&options=%7B%7D&order=%3Fsort%3Dcreated_lt-desc&filter=default&items_list_variation=default&per_page_tracker={0}&page={1}"   
+
+
+def get_old_urls(path):
+    links = []
+    try:   
+        with open(path, 'r') as infile:
+            reader = csv.DictReader(infile)
+            for line in reader:
+                links.append(line['url'])
+    except:
+        pass    
+    return links
+
+
+old_urls = get_old_urls(old_estates_path)
 
 #mojikvadrati_filter_cookie = {'filter' : '%7B%22offer_type%22%3A%221%22%2C%22property_type%22%3A%225%22%2C%22size%22%3A%2243-500%22%2C%22price%22%3A%220-135000%22%2C%22location%22%3A%5B%2213%3A%3A0%3A%3A0%22%5D%2C%22search%22%3A%221%22%2C%22option%22%3A%22advanced%22%2C%22per_page_tracker%22%3A%22-1%22%7D'}
 
@@ -37,8 +54,9 @@ class MojikvadratiSpider(scrapy.Spider):
         else:
             links = list(set([link.replace("\\","").replace('"','') for link in response.xpath('//a/@href').extract() if "nepremicnina" in link]))
             for link in links:
-                print("Following link: " + link)
-                yield scrapy.Request(link, callback=self.parse_estate_data,dont_filter=True)
+                if link not in old_urls:
+                    print("Following link: " + link)
+                    yield scrapy.Request(link, callback=self.parse_estate_data,dont_filter=True)
             if ("Trenutno na trgu ni" not in response.text ):
                 per_page = int(str(response.request.body).split("=")[-2].split("&")[0]) + 15
                 current_page = int(str(response.request.body).split("=")[-1].replace("'","").replace('"','')) + 1

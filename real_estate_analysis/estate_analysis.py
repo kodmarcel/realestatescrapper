@@ -21,7 +21,7 @@ data_folder = project_folder + "scraped_data/"
 estate_files = ["nepremicnine.csv", "mojikvadrati.csv"]
 
 #Analyzed data lcoation
-analyzed_data_folder = project_folder + "/analyzed_data/"
+analyzed_data_folder = project_folder + "analyzed_data/"
 analyzed_data_filename = "estates.csv"
 output_path = analyzed_data_folder + analyzed_data_filename
 readable_path = analyzed_data_folder + "estates.txt"
@@ -84,10 +84,13 @@ def parse_estate(estate):
 
 def get_analyzed_data():
     estates = []
-    with open(output_path, 'r') as in_file:
-        for estate in csv.DictReader(in_file):
-            parse_estate(estate)
-            estates.append(estate)
+    try:
+        with open(output_path, 'r') as in_file:
+            for estate in csv.DictReader(in_file):
+                parse_estate(estate)
+                estates.append(estate)
+    except:
+        pass
     return estates       
         
 
@@ -155,14 +158,20 @@ def get_distance(location, center):
     else:
         distance = -1
     return distance
-
+print('Getting saved data')
 ignored_urls = get_ignored(ignored_path)
 estates = get_parsed_data(ignored_urls)
 old_estates = get_analyzed_data()
 new = 0
 new_estates = []
+checked_estates = set()
+
+print('Iterating over estates')
 for estate in estates:
     found = False
+    if estate['url'] in checked_estates:
+        continue
+    checked_estates.add(estate['url'])
     for old_estate in old_estates:
         if estate['url'] == old_estate['url'] and estate['location'] == old_estate['location'] and estate['price'] == old_estate['price']:
             estate['found_location'] = old_estate['found_location']
@@ -174,6 +183,7 @@ for estate in estates:
             break
     estate['psm'] = estate['price']/estate['size']
     if not found:
+        print('Found new estate: ' + estate['url'])
         new += 1
         new_estates.append(estate)
         location = estate['location']
@@ -184,11 +194,14 @@ for estate in estates:
         points = grade_estate(estate)
         estate['points'] = points 
 
+print("Sorting estates")
 estates = sort_estates(estates, 'points')
 
+print("Saving data")
 store_estates(estates, output_path)
 store_readable(estates, readable_path)
 
+print("RESULTS")
 #newest_estates = sort_estates(estates, 'parsed')[:10]
 print("{} new estates: ".format(new))
 for estate in new_estates:
