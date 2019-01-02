@@ -11,6 +11,7 @@ from itertools import combinations
 import logging
 import csv
 from datetime import datetime
+import time
 
 logging.getLogger('geocoder.base').setLevel(logging.ERROR)
 logging.getLogger('urllib3.connectionpool').setLevel(logging.ERROR)
@@ -166,6 +167,9 @@ new = 0
 new_estates = []
 checked_estates = set()
 
+now = time.time()
+wait = 0.1 
+
 print('Iterating over estates')
 for estate in estates:
     found = False
@@ -181,9 +185,10 @@ for estate in estates:
             old_estates.remove(old_estate)
             found = True
             break
-    estate['psm'] = estate['price']/estate['size']
     if not found:
         print('Found new estate: ' + estate['url'])
+        if time.time() - now < wait:
+            time.sleep(wait) 
         new += 1
         new_estates.append(estate)
         location = estate['location']
@@ -193,6 +198,8 @@ for estate in estates:
         estate['distance'] = distance
         points = grade_estate(estate)
         estate['points'] = points 
+        now = time.time()
+    estate['psm'] = estate['price']/estate['size']
 
 print("Sorting estates")
 estates = sort_estates(estates, 'points')

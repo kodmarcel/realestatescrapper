@@ -12,6 +12,7 @@ cd $PROJECT_FOLDER
 echo "Scraping estates data"
 logger -t realestatechecker -- Scraping estates data 
 
+rm scraped_data/nepremicnine.csv
 scrapy crawl nepremicnine -o scraped_data/nepremicnine.csv
 scrapy crawl mojikvadrati -o scraped_data/mojikvadrati.csv
 

@@ -1,41 +1,71 @@
 built,floor,location,parsed,price,renewed,size,url
-1975,2,"Ljubljana, Šiška",02.01.2019 ,105000.0,,43.02,https://mojikvadrati.com/nepremicnina/180364-prodaja-stanovanje-1-5-sobno-ljubljana-siska
+1985,3,"Ljubljana, Center",02.01.2019 ,118000.0,,41.7,https://mojikvadrati.com/nepremicnina/180703-prodaja-stanovanje-1-sobno-ljubljana-center
+1991,,"Ljubljana, Bežigrad",02.01.2019 ,130000.0,,33.46,https://mojikvadrati.com/nepremicnina/180921-prodaja-stanovanje-1-sobno-ljubljana-bezigrad
 1975,,"Ljubljana, Šiška",02.01.2019 ,109500.0,,43.0,https://mojikvadrati.com/nepremicnina/180728-prodaja-stanovanje-1-sobno-ljubljana-siska
-1965,Pritličje,"Ljubljana, Moste-Polje, Polje",02.01.2019 ,117000.0,,43.8,https://mojikvadrati.com/nepremicnina/180787-prodaja-stanovanje-1-5-sobno-ljubljana-moste-polje
-1965,,"Ljubljana, Šiška",02.01.2019 ,130000.0,,49.8,https://mojikvadrati.com/nepremicnina/180624-prodaja-stanovanje-1-sobno-ljubljana-siska
-1962,1,"Ljubljana, Šiška",02.01.2019 ,135000.0,,55.6,https://mojikvadrati.com/nepremicnina/180048-prodaja-stanovanje-2-sobno-ljubljana-siska
-1904,,"Ljubljana, Šiška",02.01.2019 ,80000.0,,43.1,https://mojikvadrati.com/nepremicnina/180559-prodaja-stanovanje-1-5-sobno-ljubljana-siska
-1904,,"Ljubljana, Šiška",02.01.2019 ,116950.0,,71.3,https://mojikvadrati.com/nepremicnina/180556-prodaja-stanovanje-3-sobno-ljubljana-siska
-2010,,"Ljubljana, Center",02.01.2019 ,850.0,,60.0,https://mojikvadrati.com/nepremicnina/180352-prodaja-stanovanje-2-sobno-ljubljana-center
-,,"Ljubljana, Šiška",02.01.2019 ,125000.0,,55.0,https://mojikvadrati.com/nepremicnina/181137-prodaja-stanovanje-3-sobno-ljubljana-siska
+1969,2/4,"Ljubljana, Šiška",02.01.2019 ,89000.0,,27.0,https://mojikvadrati.com/nepremicnina/180623-prodaja-stanovanje-garsonjera-ljubljana-siska
 1971,,Ljubljana,02.01.2019 ,135000.0,,46.4,https://mojikvadrati.com/nepremicnina/181603-prodaja-stanovanje-2-sobno-ljubljana
-1898,1/3,"Ljubljana, Šiška",02.01.2019 ,135000.0,,47.7,https://mojikvadrati.com/nepremicnina/175922-prodaja-stanovanje-3-sobno-ljubljana-siska
-1930,,"Ljubljana, Bežigrad",02.01.2019 ,119000.0,,50.0,https://mojikvadrati.com/nepremicnina/176668-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
-1976,,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,84900.0,,57.0,https://mojikvadrati.com/nepremicnina/176226-prodaja-stanovanje-2-5-sobno-ljubljana-moste-polje
-1960,4/4,"Ljubljana, Šiška",02.01.2019 ,119000.0,,46.0,https://mojikvadrati.com/nepremicnina/178469-prodaja-stanovanje-2-sobno-ljubljana-siska
+,,"Ljubljana, Šiška",02.01.2019 ,125000.0,,55.0,https://mojikvadrati.com/nepremicnina/181137-prodaja-stanovanje-3-sobno-ljubljana-siska
+1978,2/4,"Ljubljana, Šiška",02.01.2019 ,130000.0,,37.8,https://mojikvadrati.com/nepremicnina/180646-prodaja-stanovanje-1-5-sobno-ljubljana-siska
+1963,4/9,"Ljubljana, Šiška, Spodnja Šiška",02.01.2019 ,98000.0,,25.7,https://mojikvadrati.com/nepremicnina/180673-prodaja-stanovanje-garsonjera-ljubljana-siska
+1965,Pritličje,"Ljubljana, Moste-Polje, Polje",02.01.2019 ,117000.0,,43.8,https://mojikvadrati.com/nepremicnina/180787-prodaja-stanovanje-1-5-sobno-ljubljana-moste-polje
+2003,,Ljubljana,02.01.2019 ,115000.0,,21.6,https://mojikvadrati.com/nepremicnina/180799-prodaja-stanovanje-garsonjera-ljubljana
+,3,"Ljubljana, Šiška",02.01.2019 ,99000.0,,39.0,https://mojikvadrati.com/nepremicnina/180064-prodaja-stanovanje-3-5-sobno-ljubljana-siska
+1929,Pritličje,"Ljubljana, Šiška",02.01.2019 ,104000.0,,40.3,https://mojikvadrati.com/nepremicnina/179804-prodaja-stanovanje-1-sobno-ljubljana-siska
+,Pritličje,"Ljubljana, Vič-Rudnik",02.01.2019 ,109000.0,,30.0,https://mojikvadrati.com/nepremicnina/179852-prodaja-stanovanje-garsonjera-ljubljana-vic-rudnik
+1972,,"Ljubljana, Moste-Polje, Vevče",02.01.2019 ,116000.0,,41.7,https://mojikvadrati.com/nepremicnina/179857-prodaja-stanovanje-1-5-sobno-ljubljana-moste-polje
+1962,1,"Ljubljana, Šiška",02.01.2019 ,135000.0,,55.6,https://mojikvadrati.com/nepremicnina/180048-prodaja-stanovanje-2-sobno-ljubljana-siska
+1991,,"Ljubljana, Bežigrad",02.01.2019 ,130000.0,,35.2,https://mojikvadrati.com/nepremicnina/180131-prodaja-stanovanje-1-5-sobno-ljubljana-bezigrad
+1928,Polklet,"Ljubljana, Vič-Rudnik, Vič",02.01.2019 ,79000.0,,25.0,https://mojikvadrati.com/nepremicnina/180473-prodaja-stanovanje-1-sobno-ljubljana-vic-rudnik
+1975,2,"Ljubljana, Šiška",02.01.2019 ,105000.0,,43.02,https://mojikvadrati.com/nepremicnina/180364-prodaja-stanovanje-1-5-sobno-ljubljana-siska
+,3,"Ljubljana, Bežigrad",02.01.2019 ,94000.0,,28.0,https://mojikvadrati.com/nepremicnina/179905-prodaja-stanovanje-garsonjera-ljubljana-bezigrad
+,,"Ljubljana, Center",02.01.2019 ,130000.0,,29.4,https://mojikvadrati.com/nepremicnina/180234-prodaja-stanovanje-garsonjera-ljubljana-center
+1977,Pritličje,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,135000.0,,43.42,https://mojikvadrati.com/nepremicnina/179089-prodaja-stanovanje-2-sobno-ljubljana-moste-polje
+1988,4,"Ljubljana, Center",02.01.2019 ,133000.0,,29.4,https://mojikvadrati.com/nepremicnina/179090-prodaja-stanovanje-garsonjera-ljubljana-center
+,,"Ljubljana, Šiška",02.01.2019 ,95000.0,,32.3,https://mojikvadrati.com/nepremicnina/179324-prodaja-stanovanje-garsonjera-ljubljana-siska
+1977,4/4,"Ljubljana, Moste-Polje, Štepanjsko naselje",02.01.2019 ,69000.0,,21.1,https://mojikvadrati.com/nepremicnina/179115-prodaja-stanovanje-garsonjera-ljubljana-moste-polje
+1967,,"Ljubljana, Šiška",02.01.2019 ,133000.0,,37.7,https://mojikvadrati.com/nepremicnina/178897-prodaja-stanovanje-2-sobno-ljubljana-siska
+1978,11,"Ljubljana, Moste-Polje, Štepanjsko naselje",02.01.2019 ,125000.0,,40.8,https://mojikvadrati.com/nepremicnina/178981-prodaja-stanovanje-1-sobno-ljubljana-moste-polje
+1938,1,"Ljubljana, Šiška",02.01.2019 ,125000.0,,54.0,https://mojikvadrati.com/nepremicnina/179185-prodaja-stanovanje-2-sobno-ljubljana-siska
 1971,,"Ljubljana, Center",02.01.2019 ,135000.0,,50.9,https://mojikvadrati.com/nepremicnina/178833-prodaja-stanovanje-1-sobno-ljubljana-center
-1930,,"Ljubljana, Bežigrad",02.01.2019 ,109800.0,,60.0,https://mojikvadrati.com/nepremicnina/177138-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
+1962,Visoko pritličje/4,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,98000.0,,31.9,https://mojikvadrati.com/nepremicnina/178950-prodaja-stanovanje-1-sobno-ljubljana-moste-polje
+,2/2,"Ljubljana, Moste-Polje",02.01.2019 ,115000.0,,37.2,https://mojikvadrati.com/nepremicnina/178744-prodaja-stanovanje-1-sobno-ljubljana-moste-polje
 ,Pritličje,"Ljubljana, Bežigrad",02.01.2019 ,127000.0,,44.0,https://mojikvadrati.com/nepremicnina/177689-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
-1990,1/2,"Ljubljana, Vič-Rudnik, Rudnik",02.01.2019 ,134000.0,,47.0,https://mojikvadrati.com/nepremicnina/176650-prodaja-stanovanje-2-5-sobno-ljubljana-vic-rudnik
 1920,,"Ljubljana, Center",02.01.2019 ,119000.0,,46.0,https://mojikvadrati.com/nepremicnina/177514-prodaja-stanovanje-2-sobno-ljubljana-center
-1912,,"Ljubljana, Moste-Polje, Polje",02.01.2019 ,134500.0,,49.6,https://mojikvadrati.com/nepremicnina/178608-prodaja-stanovanje-2-sobno-ljubljana-moste-polje
-19632018,,"Ljubljana, Moste-Polje",02.01.2019 ,99000.0,,44.0,https://mojikvadrati.com/nepremicnina/169455-prodaja-stanovanje-2-sobno-ljubljana-moste-polje
-1960,,"Ljubljana, Šiška",02.01.2019 ,129000.0,,49.7,https://mojikvadrati.com/nepremicnina/170688-prodaja-stanovanje-2-sobno-ljubljana-siska
-1931,,"Ljubljana, Moste-Polje",02.01.2019 ,107000.0,,60.1,https://mojikvadrati.com/nepremicnina/170894-prodaja-stanovanje-3-sobno-ljubljana-moste-polje
-1923,Klet/2,"Ljubljana, Vič-Rudnik, Kolezija",02.01.2019 ,127000.0,,45.0,https://mojikvadrati.com/nepremicnina/170285-prodaja-stanovanje-2-sobno-ljubljana-vic-rudnik
+1938,,"Ljubljana, Šiška",02.01.2019 ,115000.0,,42.0,https://mojikvadrati.com/nepremicnina/177562-prodaja-stanovanje-2-sobno-ljubljana-siska
+,2,"Ljubljana, Bežigrad",02.01.2019 ,130000.0,,36.9,https://mojikvadrati.com/nepremicnina/177532-prodaja-stanovanje-3-5-sobno-ljubljana-bezigrad
+1975,2/2,"Ljubljana, Šiška, Koseze",02.01.2019 ,108000.0,,31.5,https://mojikvadrati.com/nepremicnina/177361-prodaja-stanovanje-1-sobno-ljubljana-siska
+1960,1/4,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,81500.0,,23.5,https://mojikvadrati.com/nepremicnina/177448-prodaja-stanovanje-1-sobno-ljubljana-moste-polje
+1978,,"Ljubljana, Šiška",02.01.2019 ,125000.0,,41.0,https://mojikvadrati.com/nepremicnina/177331-prodaja-stanovanje-1-5-sobno-ljubljana-siska
+1960,4,"Ljubljana, Bežigrad",02.01.2019 ,99000.0,,41.7,https://mojikvadrati.com/nepremicnina/177527-prodaja-stanovanje-1-5-sobno-ljubljana-bezigrad
+,,"Ljubljana, Vič-Rudnik",02.01.2019 ,108000.0,,24.0,https://mojikvadrati.com/nepremicnina/177637-prodaja-stanovanje-garsonjera-ljubljana-vic-rudnik
+1967,4,"Ljubljana, Šiška",02.01.2019 ,129000.0,,38.7,https://mojikvadrati.com/nepremicnina/177515-prodaja-stanovanje-1-sobno-ljubljana-siska
+1977,3/4,"Ljubljana, Bežigrad",02.01.2019 ,113000.0,,40.1,https://mojikvadrati.com/nepremicnina/176682-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
+1984,3/4,"Ljubljana, Bežigrad",02.01.2019 ,109000.0,,29.2,https://mojikvadrati.com/nepremicnina/176865-prodaja-stanovanje-1-sobno-ljubljana-bezigrad
+1993,1/3,"Ljubljana, Šiška",02.01.2019 ,120000.0,,42.8,https://mojikvadrati.com/nepremicnina/176550-prodaja-stanovanje-1-sobno-ljubljana-siska
+1930,,"Ljubljana, Bežigrad",02.01.2019 ,119000.0,,50.0,https://mojikvadrati.com/nepremicnina/176668-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
+1960,4/4,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,84000.0,,23.7,https://mojikvadrati.com/nepremicnina/176437-prodaja-stanovanje-garsonjera-ljubljana-moste-polje
+1976,,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,84900.0,,57.0,https://mojikvadrati.com/nepremicnina/176226-prodaja-stanovanje-2-5-sobno-ljubljana-moste-polje
+1923,,"Ljubljana, Vič-Rudnik, Rudnik",02.01.2019 ,125000.0,,42.0,https://mojikvadrati.com/nepremicnina/176371-prodaja-stanovanje-2-sobno-ljubljana-vic-rudnik
+2006,1/3,"Ljubljana, Vič-Rudnik, Rudnik",02.01.2019 ,121500.0,,39.52,https://mojikvadrati.com/nepremicnina/176534-prodaja-stanovanje-2-5-sobno-ljubljana-vic-rudnik
+1977,,"Ljubljana, Šiška",02.01.2019 ,120000.0,,32.4,https://mojikvadrati.com/nepremicnina/176508-prodaja-stanovanje-garsonjera-ljubljana-siska
+1990,1/2,"Ljubljana, Vič-Rudnik, Rudnik",02.01.2019 ,134000.0,,47.0,https://mojikvadrati.com/nepremicnina/176650-prodaja-stanovanje-2-5-sobno-ljubljana-vic-rudnik
+1930,1/2,"Ljubljana, Šiška",02.01.2019 ,110000.0,,36.1,https://mojikvadrati.com/nepremicnina/171852-prodaja-stanovanje-1-sobno-ljubljana-siska
+1998,4,"Ljubljana, Vič-Rudnik",02.01.2019 ,108000.0,,29.6,https://mojikvadrati.com/nepremicnina/171820-prodaja-stanovanje-garsonjera-ljubljana-vic-rudnik
+1960,,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,81500.0,,27.0,https://mojikvadrati.com/nepremicnina/171949-prodaja-stanovanje-garsonjera-ljubljana-moste-polje
+1969,5/11,"Ljubljana, Šiška",02.01.2019 ,77000.0,,25.7,https://mojikvadrati.com/nepremicnina/172033-prodaja-stanovanje-garsonjera-ljubljana-siska
+1970,9/11,"Ljubljana, Šiška",02.01.2019 ,119000.0,,31.5,https://mojikvadrati.com/nepremicnina/172168-prodaja-stanovanje-garsonjera-ljubljana-siska
+1958,,"Ljubljana, Bežigrad",02.01.2019 ,115000.0,,37.0,https://mojikvadrati.com/nepremicnina/171967-prodaja-stanovanje-1-sobno-ljubljana-bezigrad
+1998,,"Ljubljana, Vič-Rudnik",02.01.2019 ,108000.0,,29.6,https://mojikvadrati.com/nepremicnina/172018-prodaja-stanovanje-1-sobno-ljubljana-vic-rudnik
+,,"Ljubljana, Bežigrad",02.01.2019 ,105000.0,,28.0,https://mojikvadrati.com/nepremicnina/171911-prodaja-stanovanje-garsonjera-ljubljana-bezigrad
+,Pritličje,"Ljubljana, Bežigrad",02.01.2019 ,130000.0,,43.8,https://mojikvadrati.com/nepremicnina/172173-prodaja-stanovanje-1-sobno-ljubljana-bezigrad
+,,"Ljubljana, Bežigrad",02.01.2019 ,97000.0,,56.4,https://mojikvadrati.com/nepremicnina/171411-prodaja-stanovanje-3-sobno-ljubljana-bezigrad
+2002,2/3,"Ljubljana, Vič-Rudnik, Rudnik",02.01.2019 ,105000.0,,23.7,https://mojikvadrati.com/nepremicnina/171110-prodaja-stanovanje-garsonjera-ljubljana-vic-rudnik
+1968,,"Ljubljana, Center",02.01.2019 ,109000.0,,31.8,https://mojikvadrati.com/nepremicnina/171147-prodaja-stanovanje-1-sobno-ljubljana-center
+1963,,"Ljubljana, Šiška",02.01.2019 ,130000.0,,36.4,https://mojikvadrati.com/nepremicnina/170933-prodaja-stanovanje-1-sobno-ljubljana-siska
 ,,"Ljubljana, Moste-Polje",02.01.2019 ,105000.0,,45.0,https://mojikvadrati.com/nepremicnina/171018-prodaja-stanovanje-garsonjera-ljubljana-moste-polje
-1983,7,"Ljubljana, Šiška",02.01.2019 ,133000.0,,48.06,https://mojikvadrati.com/nepremicnina/167605-prodaja-stanovanje-1-sobno-ljubljana-siska
-1926,2/2,"Ljubljana, Bežigrad, Črnuče",02.01.2019 ,97000.0,,48.0,https://mojikvadrati.com/nepremicnina/168385-prodaja-stanovanje-3-sobno-ljubljana-bezigrad
-1994,,"Ljubljana, Šiška, Šentvid",02.01.2019 ,128000.0,,50.5,https://mojikvadrati.com/nepremicnina/170717-prodaja-stanovanje-2-sobno-ljubljana-siska
-1998,Mansarda/penthouse,"Ljubljana, Moste-Polje, Zalog",02.01.2019 ,119000.0,,60.1,https://mojikvadrati.com/nepremicnina/167862-prodaja-stanovanje-2-5-sobno-ljubljana-moste-polje
-1940,,"Ljubljana, Vič-Rudnik",02.01.2019 ,119000.0,,120.1,https://mojikvadrati.com/nepremicnina/167427-prodaja-stanovanje-3-sobno-ljubljana-vic-rudnik
-1946,Mansarda/penthouse/1,"Ljubljana, Bežigrad, Črnuče",02.01.2019 ,119500.0,,70.4,https://mojikvadrati.com/nepremicnina/154291-prodaja-stanovanje-2-5-sobno-ljubljana-bezigrad
-1960,,"Ljubljana, Center",02.01.2019 ,129000.0,,49.7,https://mojikvadrati.com/nepremicnina/158667-prodaja-stanovanje-1-5-sobno-ljubljana-center
-1997,,"Ljubljana, Bežigrad, Savlje",02.01.2019 ,89000.0,,49.3,https://mojikvadrati.com/nepremicnina/143662-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
-1803,1/1,"Ljubljana, Bežigrad, Črnuče",02.01.2019 ,129000.0,,66.0,https://mojikvadrati.com/nepremicnina/135638-prodaja-stanovanje-3-sobno-ljubljana-bezigrad
-2000,3/3,"Ljubljana, Bežigrad, Črnuče",02.01.2019 ,130000.0,,49.6,https://mojikvadrati.com/nepremicnina/163710-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
-1998,Mansarda/penthouse,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,100000.0,,87.83,https://mojikvadrati.com/nepremicnina/133709-prodaja-stanovanje-2-5-sobno-ljubljana-moste-polje
-1905,,"Ljubljana, Center",02.01.2019 ,129000.0,,54.89,https://mojikvadrati.com/nepremicnina/163121-prodaja-stanovanje-2-sobno-ljubljana-center
-2008,,"Ljubljana, Vič-Rudnik",02.01.2019 ,2477.0,,147.0,https://mojikvadrati.com/nepremicnina/151889-prodaja-stanovanje-4-sobno-ljubljana-vic-rudnik
-1986,Visoko pritličje/3,"Ljubljana, Bežigrad, Črnuče",02.01.2019 ,135000.0,,44.2,https://mojikvadrati.com/nepremicnina/154040-prodaja-stanovanje-1-5-sobno-ljubljana-bezigrad
-1889,,"Ljubljana, Center",02.01.2019 ,134000.0,,45.5,https://mojikvadrati.com/nepremicnina/156109-prodaja-stanovanje-1-sobno-ljubljana-center
+1980,2/2,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,129000.0,,45.9,https://mojikvadrati.com/nepremicnina/171102-prodaja-stanovanje-3-sobno-ljubljana-moste-polje
+,,"Ljubljana, Moste-Polje",02.01.2019 ,95000.0,,35.0,https://mojikvadrati.com/nepremicnina/171019-prodaja-stanovanje-garsonjera-ljubljana-moste-polje
+1961,5/5,"Ljubljana, Moste-Polje, Moste",02.01.2019 ,71000.0,,21.6,https://mojikvadrati.com/nepremicnina/171043-prodaja-stanovanje-garsonjera-ljubljana-moste-polje
+1966,4/10,"Ljubljana, Šiška, Spodnja Šiška",02.01.2019 ,104900.0,,22.3,https://mojikvadrati.com/nepremicnina/170995-prodaja-stanovanje-garsonjera-ljubljana-siska
+1982,4/7,"Ljubljana, Center",02.01.2019 ,119000.0,,27.7,https://mojikvadrati.com/nepremicnina/171190-prodaja-stanovanje-garsonjera-ljubljana-center
+1931,,"Ljubljana, Moste-Polje",02.01.2019 ,107000.0,,60.1,https://mojikvadrati.com/nepremicnina/170894-prodaja-stanovanje-3-sobno-ljubljana-moste-polje

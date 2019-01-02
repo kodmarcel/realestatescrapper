@@ -17,11 +17,12 @@ post_headers = {
 "Referer":"https://mojikvadrati.com/nepremicnine",
 "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8",
 "X-Requested-With":"XMLHttpRequest",
-"Content-Length":"272",
+"Content-Length":"264",
 "Connection":"keep-alive"
 }
 
-post_body = "offer_type=1&property_type=5&size=43-500&price=0-135000&location%5B%5D=13%3A%3A0%3A%3A0&save_criteria=0&filter_name=&criteria_id=&search=1&option=advanced&options=%7B%7D&order=%3Fsort%3Dcreated_lt-desc&filter=default&items_list_variation=default&per_page_tracker={0}&page={1}"   
+#post_body = "offer_type=1&property_type=5&size=43-500&price=0-135000&location%5B%5D=13%3A%3A0%3A%3A0&save_criteria=0&filter_name=&criteria_id=&search=1&option=advanced&options=%7B%7D&order=%3Fsort%3Dcreated_lt-desc&filter=default&items_list_variation=default&per_page_tracker={0}&page={1}"   
+post_body = "property_type=5&price=50000-135000&location%5B%5D=13%3A%3A0%3A%3A0&offer_type=1&save_criteria=0&filter_name=&criteria_id=&search=1&option=advanced&options=%7B%7D&order=%3Fsort%3Dcreated_lt-desc&filter=default&items_list_variation=default&per_page_tracker={0}&page={1}"
 
 
 def get_old_urls(path):

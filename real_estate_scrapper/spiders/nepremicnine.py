@@ -8,6 +8,8 @@ import datetime
 now = datetime.datetime.now()
 old_estates_path = "scraped_data/nepremicnine.csv"
 
+bad_classes = ["ogIasi","oġlasi","oglas¡","oglàsi","oglási","oglasì","ąds","àds","áds","äds","adś","adş"]
+
 def get_old_urls(path):
     links = []
     try:   
@@ -21,7 +23,6 @@ def get_old_urls(path):
 
 
 old_urls = get_old_urls(old_estates_path)
-
 class NepremicnineSpider(scrapy.Spider):
     name = 'nepremicnine'
     allowed_domains = ['nepremicnine.net']
@@ -34,8 +35,15 @@ class NepremicnineSpider(scrapy.Spider):
     def parse_estate_listing(self, response):
         estates = response.xpath('//div[contains(@class, "oglas_container")]')
         for estate in estates:
+            skip = False
+            estate_class = estate.xpath('@class').extract_first()
+            for bad_class in bad_classes:
+                if bad_class in estate_class:
+                    skip = True
+                    break
             relative_url = estate.xpath('.//a/@href').extract_first()
-            if response.urljoin(relative_url) in old_urls:
+            if response.urljoin(relative_url) in old_urls or skip:
+                print(response.urljoin(relative_url))
                 continue
             loader = NepremicnineEstateLoader(item = Estate(), selector = estate)
             loader.add_xpath('location', './/span[@class="title"]/text()')
