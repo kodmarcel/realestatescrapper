@@ -19,7 +19,7 @@ logging.getLogger('urllib3.connectionpool').setLevel(logging.ERROR)
 #Scraped data location
 project_folder = "/home/marcel/Projects/RealEstateScrapper/"
 data_folder = project_folder + "scraped_data/"
-estate_files = ["nepremicnine.csv", "mojikvadrati.csv"]
+estate_files = ["nepremicnine.csv", "mojikvadrati.csv", "bolha.csv"]
 
 #Analyzed data lcoation
 analyzed_data_folder = project_folder + "analyzed_data/"
@@ -177,6 +177,7 @@ wait = 0.1
 for estate in estates:
     found = False
     if estate['url'] in checked_estates:
+        estates.remove(estate)
         continue
     checked_estates.add(estate['url'])
     for old_estate in old_estates:

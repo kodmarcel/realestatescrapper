@@ -4,6 +4,7 @@ from scrapy import Request
 from real_estate_scrapper.items import Estate
 from real_estate_scrapper.itemLoaders import NepremicnineEstateLoader
 import datetime
+import csv
 
 now = datetime.datetime.now()
 old_estates_path = "scraped_data/nepremicnine.csv"
