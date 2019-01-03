@@ -82,6 +82,9 @@ def parse_estate(estate):
         estate['built'] = 1970 
     if 'points' in estate.keys():
         estate['points'] = float(estate['points'])
+    if 'distance' in estate.keys():
+        estate['distance'] = float(estate['distance'])
+
 
 def get_analyzed_data():
     estates = []
@@ -159,7 +162,7 @@ def get_distance(location, center):
     else:
         distance = -1
     return distance
-print('Getting saved data')
+#print('Getting saved data')
 ignored_urls = get_ignored(ignored_path)
 estates = get_parsed_data(ignored_urls)
 old_estates = get_analyzed_data()
@@ -170,7 +173,7 @@ checked_estates = set()
 now = time.time()
 wait = 0.1 
 
-print('Iterating over estates')
+#print('Iterating over estates')
 for estate in estates:
     found = False
     if estate['url'] in checked_estates:
@@ -185,7 +188,7 @@ for estate in estates:
             found = True
             break
     if not found:
-        print('Found new estate: ' + estate['url'])
+        #print('Found new estate: ' + estate['url'])
         if time.time() - now < wait:
             time.sleep(wait) 
         new += 1
@@ -200,14 +203,14 @@ for estate in estates:
     estate['points'] = points 
     estate['psm'] = estate['price']/estate['size']
 
-print("Sorting estates")
+#print("Sorting estates")
 estates = sort_estates(estates, 'points')
 
-print("Saving data")
+#print("Saving data")
 store_estates(estates, output_path)
 store_readable(estates, readable_path)
 
-print("RESULTS")
+#print("RESULTS")
 #newest_estates = sort_estates(estates, 'parsed')[:10]
 print("{} new estates: ".format(new))
 for estate in new_estates:

@@ -2078,6 +2078,19 @@ renewed:
 parsed: 02.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-center-stanovanje_6223831/
 
+points: 24.528556065178513
+price: 115000.0
+size: 40.5
+psm: 2839.5061728395062
+distance: 3.090167820952902
+floor: VP
+location: LJ. ŠIŠKA, GOSPODINJSKA ULICA
+found_location: Mestna občina Lj. , služba za lok. samoupravo, 19a, Ljubeljska ulica, Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1000, Slovenija
+built: 1960.0
+renewed: 
+parsed: 03.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-gospodinjska-ulica-stanovanje_6234255/
+
 points: 24.244654934904915
 price: 129000.0
 size: 45.9
@@ -2168,19 +2181,6 @@ built: 1834.0
 renewed: 
 parsed: 02.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-vodnikova-cesta-86-stanovanje_6232179/
-
-points: 23.528556065178513
-price: 118000.0
-size: 40.5
-psm: 2913.58024691358
-distance: 3.090167820952902
-floor: VP
-location: LJ. ŠIŠKA, GOSPODINJSKA ULICA
-found_location: Mestna občina Lj. , služba za lok. samoupravo, 19a, Ljubeljska ulica, Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1000, Slovenija
-built: 1960.0
-renewed: 
-parsed: 02.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-gospodinjska-ulica-stanovanje_6234255/
 
 points: 23.26687715712714
 price: 116000.0
@@ -2585,6 +2585,19 @@ renewed:
 parsed: 02.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6234118/
 
+points: 4.112739216423805
+price: 85000.0
+size: 43.0
+psm: 1976.7441860465117
+distance: 11.749963864654033
+floor: M
+location: LJ. MOSTE, ZALOG - SP. KAŠELJ
+found_location: Podpeč/Lj.Jereb, 642, Brezovica, Upravna Enota Ljubljana, Osrednjeslovenska, 1352, Slovenija
+built: 1976.0
+renewed: 
+parsed: 03.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-zalog-sp-kaselj-stanovanje_6234882/
+
 points: 3.2016281053126967
 price: 120000.0
 size: 48.2
@@ -2636,6 +2649,19 @@ built: 1968.0
 renewed: 
 parsed: 02.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-vevce-stanovanje_6232429/
+
+points: 0.5127392164238014
+price: 125000.0
+size: 49.4
+psm: 2530.364372469636
+distance: 11.749963864654033
+floor: 1
+location: LJ. MOSTE
+found_location: Podpeč/Lj.Jereb, 642, Brezovica, Upravna Enota Ljubljana, Osrednjeslovenska, 1352, Slovenija
+built: 1900.0
+renewed: 
+parsed: 03.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6234923/
 
 points: 0.2794058830904689
 price: 120000.0
