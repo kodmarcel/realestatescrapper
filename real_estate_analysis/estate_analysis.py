@@ -144,17 +144,21 @@ def grade_estate(estate):
     return points + price_points + size_points + built_points + distance_points + floor_points 
 
 def find_location(location):
-    location = location + ", " + city
+    locations = location.lower().replace("-", ",").replace("lj.", "ljubljana,").split(",")
+    for location in locations:
+        if location.find("lokac") != -1:
+            locations.remove(location)
+    location = ",".join(locations)
     loc = geocoder.osm(location)
-    if loc.country !=country:
-        locations = location.replace(".", ",").split(",")
-        for r in range(len(locations), 0, -1):
-            possible = combinations(locations,r)
-            for p in possible:
-                loc = geocoder.osm(",".join(p))
-                if loc.country == country:
-                    return loc
-    return loc
+    if not loc.ok or loc.city != city:
+        loc = geocoder.osm(city + "," + locations[-1])
+        if not loc.ok or loc.city != city:
+            if len(locations) > 1:
+                loc = geocoder.osm(city + "," + locations[-2])
+            else:
+                loc = geocoder.osm(city)
+    return loc        
+
 
 def get_distance(location, center):
     if location.country == country:
@@ -172,12 +176,12 @@ checked_estates = set()
 
 now = time.time()
 wait = 0.1 
-
+duplicates = []
 #print('Iterating over estates')
 for estate in estates:
     found = False
     if estate['url'] in checked_estates:
-        estates.remove(estate)
+        duplicates.append(estate)
         continue
     checked_estates.add(estate['url'])
     for old_estate in old_estates:
@@ -204,6 +208,10 @@ for estate in estates:
     estate['points'] = points 
     estate['psm'] = estate['price']/estate['size']
 
+#delete duplicates
+for duplicate in duplicates:
+    estates.remove(duplicate)
+
 #print("Sorting estates")
 estates = sort_estates(estates, 'points')
 
@@ -218,7 +226,7 @@ for estate in new_estates:
     print(get_readable_form(estate))
 
 print()
-amount = 5
+amount = 10
 
 print("{} best estates: ".format(amount))
 for estate in estates[:amount]:
