@@ -44,7 +44,6 @@ class NepremicnineSpider(scrapy.Spider):
                     break
             relative_url = estate.xpath('.//a/@href').extract_first()
             if response.urljoin(relative_url) in old_urls or skip:
-                print(response.urljoin(relative_url))
                 continue
             loader = NepremicnineEstateLoader(item = Estate(), selector = estate)
             loader.add_xpath('location', './/span[@class="title"]/text()')

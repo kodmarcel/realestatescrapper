@@ -52,7 +52,7 @@ def get_ignored(path):
     with open(ignored_path,'r') as ignored:
         lines = ignored.readlines()
     for i in range(len(lines)):
-        lines[i] = lines[i].strip()
+        lines[i] = strip_url(lines[i].strip())
     return lines
 
 def get_parsed_data(ignored_urls):
@@ -61,12 +61,21 @@ def get_parsed_data(ignored_urls):
         estate_file = data_folder + estate_file        
         with open(estate_file, 'r') as in_file:
             for estate in csv.DictReader(in_file):
-                if estate['url'] in ignored_urls or 'oddaja' in estate['url']:
+                if strip_url(estate['url']) in ignored_urls or 'oddaja' in estate['url']:
                     continue
                 parse_estate(estate)
                 estates.append(estate)
     return estates       
-        
+
+def same_urls(url_1, url_2):
+   return strip_url(url_1) == strip_url(url_2) 
+
+def strip_url(url):
+    if 'bolha' in url:
+        return url.split('.html?')[0] + '.html'
+    return url
+
+
 def parse_estate(estate):
     try:
         estate['price'] = float(estate['price'])
@@ -185,7 +194,7 @@ for estate in estates:
         continue
     checked_estates.add(estate['url'])
     for old_estate in old_estates:
-        if estate['url'] == old_estate['url'] and estate['location'] == old_estate['location'] and estate['price'] == old_estate['price']:
+        if same_urls(estate['url'], old_estate['url']) and estate['location'] == old_estate['location'] and estate['price'] == old_estate['price']:
             estate['found_location'] = old_estate['found_location']
             estate['distance'] = old_estate['distance']
             estate['parsed'] = old_estate['parsed']
@@ -214,6 +223,7 @@ for duplicate in duplicates:
 
 #print("Sorting estates")
 estates = sort_estates(estates, 'points')
+new_estates = sort_estates(new_estates, 'points')
 
 #print("Saving data")
 store_estates(estates, output_path)
@@ -226,7 +236,7 @@ for estate in new_estates:
     print(get_readable_form(estate))
 
 print()
-amount = 10
+amount = 20
 
 print("{} best estates: ".format(amount))
 for estate in estates[:amount]:

@@ -14,10 +14,15 @@ cd $PROJECT_FOLDER
 echo "Scraping estates data"
 logger -t realestatechecker -- Scraping estates data 
 
-rm scraped_data/nepremicnine.csv
+cp scraped_data/nepremicnine.csv scraped_data/nepremicnine.csv.old
+cp scraped_data/bolha.csv scraped_data/bolha.csv.old
+cp scraped_data/mojikvadrati.csv scraped_data/mojikvadrati.csv.old
+
 scrapy crawl nepremicnine -o scraped_data/nepremicnine.csv
 scrapy crawl bolha -o scraped_data/bolha.csv
 scrapy crawl mojikvadrati -o scraped_data/mojikvadrati.csv
+
+cp analyzed_data/estates.csv analyzed_data/estates.csv.old
 
 echo " Analyzing estates data"
 logger -t realestatechecker -- Analyzing estates data 
