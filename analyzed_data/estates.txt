@@ -1,3 +1,16 @@
+points: 107.85531960322947
+price: 119000.0
+size: 120.1
+psm: 990.8409658617819
+distance: 3.4357445718206736
+floor: 1
+location: Gornji Rudnik
+found_location: Gornji Rudnik IV, London, Rudnik, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1108, Slovenija
+built: 1940.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-vic-gornji-rudnik-3-sobno-1201-m2-prodam-1337690221.html.html
+
 points: 107.6249525800269
 price: 119000.0
 size: 120.1
@@ -10,6 +23,32 @@ built: 1940.0
 renewed: 
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/rudnik-stanovanje_6204500/
+
+points: 90.14068299929329
+price: 100000.0
+size: 87.83
+psm: 1138.563133325743
+distance: 2.59579069009869
+floor: Mansarda
+location: Ljubljana - Moste
+found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
+built: 1998.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-25-sobno-ljubljana-mesto-moste-polje-moste-8783-m2--1334590342.html.html
+
+points: 76.6007079170582
+price: 105000.0
+size: 82.0
+psm: 1280.4878048780488
+distance: 2.912851376501778
+floor: 
+location: Ljubljana - Šiska
+found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
+built: 1950.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-3-sobno-ljubljana-mesto-siska-smlednik-82-m2--1337997349.html.html
 
 points: 70.98404125039153
 price: 126000.0
@@ -50,6 +89,19 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-skofljica-stanovanje_6224533/
 
+points: 65.42631914747143
+price: 129500.0
+size: 67.5
+psm: 1918.5185185185185
+distance: 0.15470468120260225
+floor: Mansarda
+location: 
+found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
+built: 1900.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-polje-2-5-sobno-6750-m2-prodam-1339091420.html.html
+
 points: 65.3122884217174
 price: 120500.0
 size: 72.2
@@ -62,6 +114,32 @@ built: 1932.0
 renewed: 
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-galjevica-ul-tomsiceve-brigade-stanovanje_6216529/
+
+points: 62.77201417768063
+price: 120500.0
+size: 72.2
+psm: 1668.9750692520774
+distance: 2.6397378739523942
+floor: 1
+location: Galjevica
+found_location: Galjevica, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1108, Slovenija
+built: 1932.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-vic-galjevica-2-5-sobno-7220-m2-prodam-1338798203.html.html
+
+points: 61.91737458372486
+price: 116950.0
+size: 71.3
+psm: 1640.2524544179523
+distance: 2.912851376501778
+floor: 
+location: Ljubljana - Šiska
+found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
+built: 1904.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-3-sobno-ljubljana-mesto-siska-713-m2-prodaja-1340500571.html.html
 
 points: 59.75256864258426
 price: 115000.0
@@ -76,6 +154,32 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-podutik-na-zelo-dobri-lokaciji-stanovanje_6201854/
 
+points: 57.85828591336023
+price: 79000.0
+size: 57.0
+psm: 1385.9649122807018
+distance: 3.491032657389291
+floor: K
+location: RUDNIK, GORNJI I 5
+found_location: Rudnik, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1108, Slovenija
+built: 1940.0
+renewed: 
+parsed: 09.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/rudnik-gornji-i-5-stanovanje_6228984/
+
+points: 57.743359429693506
+price: 75000.0
+size: 77.0
+psm: 974.025974025974
+distance: 8.638615013469304
+floor: 
+location: Ljubljana-Šmartno
+found_location: Šmartno, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1211, Slovenija
+built: 1950.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-smartno-comma-3-sobno-comma-77-m2-comma-period-period-period--1340216960.html.html
+
 points: 56.992985814138095
 price: 109800.0
 size: 60.0
@@ -86,8 +190,8 @@ location: bližina stadiona
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 1930.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-blizina-stadiona-2-sobno-6000-m2-prodam-1339591178.html?aclct=1544518733
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-blizina-stadiona-2-sobno-6000-m2-prodam-1339591178.html.html
 
 points: 56.526319147471426
 price: 135000.0
@@ -99,73 +203,34 @@ location: Ljubljana
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 2006.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/ljubljana-vic-enoinpol-sobno-atrijsko-stanovanje-stanovanje-1--1340257421.html?aclct=1546740729
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/ljubljana-vic-enoinpol-sobno-atrijsko-stanovanje-stanovanje-1--1340257421.html.html
 
-points: 56.526319147471426
-price: 135000.0
-size: 54.6
-psm: 2472.5274725274726
+points: 56.07734966595996
+price: 119000.0
+size: 60.1
+psm: 1980.0332778702164
+distance: 2.59579069009869
+floor: Mansarda
+location: Ljubljana - Moste
+found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
+built: 1998.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-25-sobno-ljubljana-mesto-moste-polje-zalog-601-m2--1338265793.html.html
+
+points: 55.148541369693646
+price: 120000.0
+size: 51.0
+psm: 2352.9411764705883
 distance: 0.15470468120260225
 floor: 
-location: Ljubljana 
+location: Ljubljana
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 2006.0
+built: 1986.0
 renewed: 
-parsed: 07.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/ljubljana-vic-enoinpol-sobno-atrijsko-stanovanje-stanovanje-1--1340257421.html?aclct=1546824723
-
-points: 56.526319147471426
-price: 135000.0
-size: 54.6
-psm: 2472.5274725274726
-distance: 0.15470468120260225
-floor: 
-location: Ljubljana 
-found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 2006.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/ljubljana-vic-enoinpol-sobno-atrijsko-stanovanje-stanovanje-1--1340257421.html?aclct=1546911144
-
-points: 56.07734966595996
-price: 119000.0
-size: 60.1
-psm: 1980.0332778702164
-distance: 2.59579069009869
-floor: Mansarda
-location: Ljubljana - Moste
-found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1998.0
-renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-25-sobno-ljubljana-mesto-moste-polje-zalog-601-m2--1338265793.html?aclct=1546737239
-
-points: 56.07734966595996
-price: 119000.0
-size: 60.1
-psm: 1980.0332778702164
-distance: 2.59579069009869
-floor: Mansarda
-location: Ljubljana - Moste
-found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1998.0
-renewed: 
-parsed: 07.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-25-sobno-ljubljana-mesto-moste-polje-zalog-601-m2--1338265793.html?aclct=1546823617
-
-points: 56.07734966595996
-price: 119000.0
-size: 60.1
-psm: 1980.0332778702164
-distance: 2.59579069009869
-floor: Mansarda
-location: Ljubljana - Moste
-found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1998.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-25-sobno-ljubljana-mesto-moste-polje-zalog-601-m2--1338265793.html?aclct=1546910010
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-comma-1-sobno-comma-51-m2-comma-prodamo-1337947603.html.html
 
 points: 55.06907748935617
 price: 109800.0
@@ -180,18 +245,31 @@ renewed:
 parsed: 05.01.2019 
 url: https://mojikvadrati.com/nepremicnina/177138-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
 
-points: 52.42631914747143
-price: 119000.0
-size: 51.0
-psm: 2333.3333333333335
+points: 53.25965248080476
+price: 110000
+size: 48
+psm: 2291.6666666666665
 distance: 0.15470468120260225
-floor: 4
-location: Ljubljana 
+floor: 
+location: Nepremičnine na enostaven in transparenten način
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 1960.0
+built: 1970
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-siska-51-m2-prodaja-1340123618.html?aclct=1546740717
+parsed: 11.01.2019 
+url: https://mojikvadrati.com
+
+points: 53.00070791705819
+price: 120000.0
+size: 63.4
+psm: 1892.7444794952683
+distance: 2.912851376501778
+floor: 4
+location: LJ. ŠIŠKA
+found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
+built: 1959.0
+renewed: 
+parsed: 09.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6236516/
 
 points: 52.42631914747143
 price: 119000.0
@@ -203,34 +281,8 @@ location: Ljubljana
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 1960.0
 renewed: 
-parsed: 07.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-siska-51-m2-prodaja-1340123618.html?aclct=1546824711
-
-points: 52.42631914747143
-price: 119000.0
-size: 51.0
-psm: 2333.3333333333335
-distance: 0.15470468120260225
-floor: 4
-location: Ljubljana 
-found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 1960.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-siska-51-m2-prodaja-1340123618.html?aclct=1546911130
-
-points: 51.6929858141381
-price: 135000.0
-size: 55.6
-psm: 2428.0575539568345
-distance: 0.15470468120260225
-floor: 1
-location: 
-found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 1962.0
-renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-2-sobno-5560-m2-prodam-1340348738.html?aclct=1544439813
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-siska-51-m2-prodaja-1340123618.html.html
 
 points: 51.43898467794175
 price: 116300.0
@@ -359,8 +411,8 @@ location:
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 1962.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-2-sobno-4970-m2-prodam-1338816074.html?aclct=1543924043
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-2-sobno-4970-m2-prodam-1338816074.html.html
 
 points: 47.7929858141381
 price: 129000.0
@@ -372,8 +424,21 @@ location:
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 1960.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-1-5-sobno-4970-m2-prodam-1340225828.html?aclct=1543923407
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-1-5-sobno-4970-m2-prodam-1340225828.html.html
+
+points: 47.7040969252492
+price: 119900.0
+size: 43.8
+psm: 2737.4429223744296
+distance: 0.15470468120260225
+floor: 
+location: 
+found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
+built: 1984.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-1-sobno-438-m2-prodam-1341042632.html.html
 
 points: 47.45464510656964
 price: 131000.0
@@ -424,8 +489,8 @@ location:
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 1980.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-3-sobno-4590-m2-prodam-1338781157.html?aclct=1545234728
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-3-sobno-4590-m2-prodam-1338781157.html.html
 
 points: 46.03404125039153
 price: 80000.0
@@ -450,34 +515,8 @@ location: Ljubljana - Šiska
 found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
 built: 1904.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-15-sobno-ljubljana-mesto-siska-431-m2-prodaja-1340500583.html?aclct=1546737372
-
-points: 46.03404125039153
-price: 80000.0
-size: 43.1
-psm: 1856.1484918793503
-distance: 2.912851376501778
-floor: 
-location: Ljubljana - Šiska
-found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
-built: 1904.0
-renewed: 
-parsed: 07.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-15-sobno-ljubljana-mesto-siska-431-m2-prodaja-1340500583.html?aclct=1546823747
-
-points: 46.03404125039153
-price: 80000.0
-size: 43.1
-psm: 1856.1484918793503
-distance: 2.912851376501778
-floor: 
-location: Ljubljana - Šiska
-found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
-built: 1904.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-15-sobno-ljubljana-mesto-siska-431-m2-prodaja-1340500583.html?aclct=1546910094
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-15-sobno-ljubljana-mesto-siska-431-m2-prodaja-1340500583.html.html
 
 points: 45.50512744373773
 price: 125000.0
@@ -658,34 +697,8 @@ location: Ljubljana
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 1971.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-464-m2-prodaja-1340720864.html?aclct=1546737393
-
-points: 43.465208036360316
-price: 135000.0
-size: 46.4
-psm: 2909.4827586206898
-distance: 0.15470468120260225
-floor: 
-location: Ljubljana 
-found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 1971.0
-renewed: 
-parsed: 07.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-464-m2-prodaja-1340720864.html?aclct=1546823759
-
-points: 43.465208036360316
-price: 135000.0
-size: 46.4
-psm: 2909.4827586206898
-distance: 0.15470468120260225
-floor: 
-location: Ljubljana 
-found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 1971.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-464-m2-prodaja-1340720864.html?aclct=1546910103
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-464-m2-prodaja-1340720864.html.html
 
 points: 43.322930139280416
 price: 109000.0
@@ -713,6 +726,32 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-spodnja-neposredna-blizina-parka-tivoli-stanovanje_6201985/
 
+points: 42.87044856917127
+price: 119500.0
+size: 68.0
+psm: 1757.3529411764705
+distance: 6.48811361999464
+floor: Mansarda
+location: Ljubljana - Črnuče
+found_location: Črnuče, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1231, Slovenija
+built: 1946.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-v-vecstanovanjski-hisi-stanovanje-25-sobno--1333940866.html.html
+
+points: 42.42631914747143
+price: 134000.0
+size: 46.0
+psm: 2913.0434782608695
+distance: 0.15470468120260225
+floor: 
+location: Ljubljana
+found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
+built: 1889.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-comma-2-sobno-comma-46-m2-comma-prodamo-1334469022.html.html
+
 points: 42.14401633262662
 price: 129000.0
 size: 52.0
@@ -723,8 +762,8 @@ location: Ljubljana Moste
 found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
 built: 1980.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-ljubljana-moste-2-5-sobno-52-m2-prodam-1340779283.html?aclct=1546612842
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-ljubljana-moste-2-5-sobno-52-m2-prodam-1340779283.html.html
 
 points: 42.040763591915876
 price: 109990.0
@@ -853,34 +892,8 @@ location: Ljubljana - Šiska
 found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
 built: 1906.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-spodnja-siska-539--1305457643.html?aclct=1546732860
-
-points: 41.83404125039153
-price: 125000.0
-size: 53.9
-psm: 2319.109461966605
-distance: 2.912851376501778
-floor: Mansarda
-location: Ljubljana - Šiska
-found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
-built: 1906.0
-renewed: 
-parsed: 07.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-spodnja-siska-539--1305457643.html?aclct=1546819262
-
-points: 41.83404125039153
-price: 125000.0
-size: 53.9
-psm: 2319.109461966605
-distance: 2.912851376501778
-floor: Mansarda
-location: Ljubljana - Šiska
-found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
-built: 1906.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-spodnja-siska-539--1305457643.html?aclct=1546905652
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-2-sobno-ljubljana-mesto-siska-spodnja-siska-539--1305457643.html.html
 
 points: 41.42631914747143
 price: 134000.0
@@ -983,8 +996,8 @@ location:
 found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
 built: 1984.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-1-sobno-4735-m2-prodam-1339058330.html?aclct=1545234419
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-1-sobno-4735-m2-prodam-1339058330.html.html
 
 points: 40.381539772870454
 price: 89000.0
@@ -1007,10 +1020,10 @@ distance: 5.037451731106834
 floor: 1
 location: Savlje
 found_location: Savlje, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1131, Slovenija
-built: 1960.0
+built: 1800.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-savlje-2-sobno-493-m2-prodam-1320176314.html?aclct=1532075271
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-savlje-2-sobno-4930-m2-prodam-1329934222.html.html
 
 points: 40.381539772870454
 price: 89000.0
@@ -1020,10 +1033,10 @@ distance: 5.037451731106834
 floor: 1
 location: Savlje
 found_location: Savlje, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1131, Slovenija
-built: 1800.0
+built: 1960.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-savlje-2-sobno-4930-m2-prodam-1329934222.html?aclct=1532075561
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-bezigrad-savlje-2-sobno-493-m2-prodam-1320176314.html.html
 
 points: 40.36907748935617
 price: 99000.0
@@ -1076,19 +1089,6 @@ built: 1962.0
 renewed: 
 parsed: 05.01.2019 
 url: https://mojikvadrati.com/nepremicnina/180048-prodaja-stanovanje-2-sobno-ljubljana-siska
-
-points: 40.092985814138096
-price: 132000.0
-size: 43.0
-psm: 3069.767441860465
-distance: 0.15470468120260225
-floor: 2
-location: 
-found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
-built: 1926.0
-renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-2-sobno-43-m2-prodam-1340368637.html?aclct=1544728661
 
 points: 40.02985584395142
 price: 134000.0
@@ -1324,6 +1324,19 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6174984/
 
+points: 38.28018860046727
+price: 119900.0
+size: 43.8
+psm: 2737.4429223744296
+distance: 2.4164426791502653
+floor: 
+location: Ljubljana, Bežigrad
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1984.0
+renewed: 
+parsed: 10.01.2019 
+url: https://mojikvadrati.com/nepremicnina/182553-prodaja-stanovanje-1-sobno-ljubljana-bezigrad
+
 points: 37.7037819025046
 price: 129000.0
 size: 66.0
@@ -1376,6 +1389,19 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-stanovanje_6219881/
 
+points: 36.87907748935616
+price: 135000.0
+size: 50.21
+psm: 2688.707428799044
+distance: 2.4164426791502653
+floor: 4
+location: LJ. BEŽIGRAD
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1964.0
+renewed: 
+parsed: 11.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6237063/
+
 points: 36.72190875953676
 price: 129500.0
 size: 67.5
@@ -1425,8 +1451,8 @@ location: Šišenska
 found_location: Šišenska cesta, Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, SI-1000, Slovenija
 built: 1960.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-sisenska-2-sobno-4970-m2-prodam-1340226317.html?aclct=1543924894
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-sisenska-2-sobno-4970-m2-prodam-1340226317.html.html
 
 points: 36.33658267784775
 price: 119000.0
@@ -1492,6 +1518,19 @@ built: 1960.0
 renewed: 
 parsed: 05.01.2019 
 url: https://mojikvadrati.com/nepremicnina/170688-prodaja-stanovanje-2-sobno-ljubljana-siska
+
+points: 36.23959680594708
+price: 129900.0
+size: 49.8
+psm: 2608.4337349397592
+distance: 2.912851376501778
+floor: 
+location: LJ. ŠIŠKA
+found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
+built: 1965.0
+renewed: 
+parsed: 09.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6236525/
 
 points: 36.20626347261375
 price: 130000.0
@@ -1805,58 +1844,6 @@ renewed:
 parsed: 05.01.2019 
 url: https://mojikvadrati.com/nepremicnina/175897-prodaja-stanovanje-2-sobno-ljubljana-vic-rudnik
 
-points: 33.58373313877231
-price: 115000.0
-size: 51.0
-psm: 2254.901960784314
-distance: 5.996925323290391
-floor: 
-location: Ljubljana-Šentvid
-found_location: Šentvid, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1210, Slovenija
-built: 1994.0
-renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-sentvid-comma-2-sobno-comma-51-m2-comma-period-period-period--1338370502.html?aclct=1546739974
-
-points: 33.58373313877231
-price: 115000.0
-size: 51.0
-psm: 2254.901960784314
-distance: 5.996925323290391
-floor: 
-location: Ljubljana-Šentvid
-found_location: Šentvid, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1210, Slovenija
-built: 1994.0
-renewed: 
-parsed: 06.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-sentvid-comma-2-sobno-comma-51-m2-comma-period-period-period--1338370502.html?aclct=1546804590
-
-points: 33.58373313877231
-price: 115000.0
-size: 51.0
-psm: 2254.901960784314
-distance: 5.996925323290391
-floor: 
-location: Ljubljana-Šentvid
-found_location: Šentvid, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1210, Slovenija
-built: 1994.0
-renewed: 
-parsed: 07.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-sentvid-comma-2-sobno-comma-51-m2-comma-period-period-period--1338370502.html?aclct=1546826251
-
-points: 33.58373313877231
-price: 115000.0
-size: 51.0
-psm: 2254.901960784314
-distance: 5.996925323290391
-floor: 
-location: Ljubljana-Šentvid
-found_location: Šentvid, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1210, Slovenija
-built: 1994.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-sentvid-comma-2-sobno-comma-51-m2-comma-period-period-period--1338370502.html?aclct=1546912847
-
 points: 33.269077489356164
 price: 129000.0
 size: 44.6
@@ -2039,6 +2026,19 @@ renewed:
 parsed: 08.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-blizina-fakultet-stanovanje_6236303/
 
+points: 31.557966378245055
+price: 130000.0
+size: 41.0
+psm: 3170.731707317073
+distance: 2.4164426791502653
+floor: 4
+location: Ljubljana, Bežigrad
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1980.0
+renewed: 
+parsed: 09.01.2019 
+url: https://mojikvadrati.com/nepremicnina/182379-prodaja-stanovanje-1-sobno-ljubljana-bezigrad
+
 points: 31.449132124305493
 price: 125000.0
 size: 42.9
@@ -2104,6 +2104,19 @@ renewed:
 parsed: 05.01.2019 
 url: https://mojikvadrati.com/nepremicnina/167862-prodaja-stanovanje-2-5-sobno-ljubljana-moste-polje
 
+points: 31.30142721253343
+price: 127000.0
+size: 40.5
+psm: 3135.8024691358023
+distance: 2.0646787455877216
+floor: 3
+location: SAVSKO NASELJE, LJ.
+found_location: Savsko naselje, Vodmat, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1958.0
+renewed: 
+parsed: 09.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/savsko-naselje-lj-stanovanje_6236336/
+
 points: 31.080188600467274
 price: 119000.0
 size: 43.8
@@ -2116,6 +2129,19 @@ built: 1984.0
 renewed: 
 parsed: 08.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6236216/
+
+points: 30.963521933800614
+price: 130000.0
+size: 47.35
+psm: 2745.5121436114046
+distance: 2.4164426791502653
+floor: P
+location: LJ. BEŽIGRAD
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1984.0
+renewed: 
+parsed: 10.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6236951/
 
 points: 30.91352193380061
 price: 130000.0
@@ -2181,6 +2207,19 @@ built: 1963.0
 renewed: 
 parsed: 07.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-zavetiska-ulica-stanovanje_6235710/
+
+points: 30.25929838291345
+price: 125000.0
+size: 46.8
+psm: 2670.940170940171
+distance: 2.186789664696516
+floor: P
+location: LJ. MOSTE, PRVOMAJSKA
+found_location: Prvomajska ulica, Kodeljevo, Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
+built: 1960.0
+renewed: 
+parsed: 11.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-prvomajska-stanovanje_6237047/
 
 points: 30.195376584562922
 price: 130000.0
@@ -2559,6 +2598,19 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-dravlje-stanovanje_6223527/
 
+points: 27.000606302269127
+price: 135000.0
+size: 45.6
+psm: 2960.5263157894738
+distance: 4.147542430717822
+floor: 3
+location: Dravlje
+found_location: Dravlje, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1117, Slovenija
+built: 1978.0
+renewed: 
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-siska-dravlje-1-5-sobno-456-m2-prodam-1339277177.html.html
+
 points: 26.738575426203422
 price: 134500.0
 size: 49.6
@@ -2881,8 +2933,8 @@ location: Polje
 found_location: Polje, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1260, Slovenija
 built: 1912.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-polje-2-sobno-496-m2-prodam-1340068388.html?aclct=1543316864
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-polje-2-sobno-496-m2-prodam-1340068388.html.html
 
 points: 22.100707917058195
 price: 135000.0
@@ -2972,21 +3024,8 @@ location: Tacen
 found_location: Tacen, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1210, Slovenija
 built: 1938.0
 renewed: 
-parsed: 05.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-smarna-gora-tacen-2-5-sobno-55-m2-prodam-1340436236.html?aclct=1545234728
-
-points: 20.324423114172156
-price: 125000.0
-size: 55.0
-psm: 2272.7272727272725
-distance: 8.339159729194428
-floor: 1
-location: Tacen
-found_location: Tacen, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1210, Slovenija
-built: 1938.0
-renewed: 
-parsed: 08.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-smarna-gora-tacen-2-5-sobno-55-m2-prodam-1340436236.html?aclct=1546883187
+parsed: 11.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-smarna-gora-tacen-2-5-sobno-55-m2-prodam-1340436236.html.html
 
 points: 20.28290669556514
 price: 115000.0

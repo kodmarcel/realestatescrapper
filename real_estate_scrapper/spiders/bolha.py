@@ -15,10 +15,16 @@ def get_old_urls(path):
         with open(path, 'r') as infile:
             reader = csv.DictReader(infile)
             for line in reader:
-                links.append(line['url'])
+                links.append(strip_url(line['url']))
     except:
         pass    
     return links
+
+def strip_url(url):
+    if 'bolha' in url:
+        return url.split('.html?')[0] + '.html'
+    return url
+
 
 
 old_urls = get_old_urls(old_estates_path)
@@ -31,7 +37,7 @@ class BolhaSpider(scrapy.Spider):
     def parse(self, response):
         ads = response.xpath('//div[@class="ad"]')
         for ad in ads:
-            url = response.urljoin(ad.xpath('.//a/@href').extract_first())
+            url = strip_url(response.urljoin(ad.xpath('.//a/@href').extract_first()))
             if url not in old_urls:
                 yield Request(url, callback = self.parse_estate)
         follow_url = response.xpath('//a[@class="forward"]/@href').extract_first()

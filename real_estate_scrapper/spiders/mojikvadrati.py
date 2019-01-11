@@ -64,7 +64,8 @@ class MojikvadratiSpider(scrapy.Spider):
             for link in links:
                 if link not in old_urls:
                     print("Following link: " + link)
-                    yield scrapy.Request(link, callback=self.parse_estate_data,dont_filter=True)
+                    if link != "https://mojikvadrati.com":
+                        yield scrapy.Request(link, callback=self.parse_estate_data,dont_filter=True)
             if ("Trenutno na trgu ni" not in response.text ):
                 per_page = int(str(response.request.body).split("=")[-2].split("&")[0]) + 15
                 current_page = int(str(response.request.body).split("=")[-1].replace("'","").replace('"','')) + 1

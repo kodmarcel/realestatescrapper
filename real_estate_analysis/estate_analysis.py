@@ -61,14 +61,12 @@ def get_parsed_data(ignored_urls):
         estate_file = data_folder + estate_file        
         with open(estate_file, 'r') as in_file:
             for estate in csv.DictReader(in_file):
-                if strip_url(estate['url']) in ignored_urls or 'oddaja' in estate['url']:
+                estate['url'] = strip_url(estate['url'])
+                if estate['url'] in ignored_urls or 'oddaja' in estate['url']:
                     continue
                 parse_estate(estate)
                 estates.append(estate)
     return estates       
-
-def same_urls(url_1, url_2):
-   return strip_url(url_1) == strip_url(url_2) 
 
 def strip_url(url):
     if 'bolha' in url:
@@ -194,7 +192,7 @@ for estate in estates:
         continue
     checked_estates.add(estate['url'])
     for old_estate in old_estates:
-        if same_urls(estate['url'], old_estate['url']) and estate['location'] == old_estate['location'] and estate['price'] == old_estate['price']:
+        if estate['url'] == old_estate['url'] and estate['location'] == old_estate['location'] and estate['price'] == old_estate['price']:
             estate['found_location'] = old_estate['found_location']
             estate['distance'] = old_estate['distance']
             estate['parsed'] = old_estate['parsed']
