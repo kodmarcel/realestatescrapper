@@ -22,7 +22,7 @@ def get_old_urls(path):
 
 def strip_url(url):
     if 'bolha' in url:
-        return url.split('.html?')[0] + '.html'
+        return url.split('.html')[0] + '.html'
     return url
 
 
