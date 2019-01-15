@@ -12,6 +12,9 @@ import logging
 import csv
 from datetime import datetime
 import time
+import datetime
+
+today = datetime.datetime.now()
 
 logging.getLogger('geocoder.base').setLevel(logging.ERROR)
 logging.getLogger('urllib3.connectionpool').setLevel(logging.ERROR)
@@ -203,8 +206,6 @@ for estate in estates:
         #print('Found new estate: ' + estate['url'])
         if time.time() - now < wait:
             time.sleep(wait) 
-        new += 1
-        new_estates.append(estate)
         location = estate['location']
         found_location = find_location(location)
         estate['found_location'] = found_location.address
@@ -214,6 +215,9 @@ for estate in estates:
     points = grade_estate(estate)
     estate['points'] = points 
     estate['psm'] = estate['price']/estate['size']
+    if (estate['parsed'] == today.strftime("%d.%m.%Y ")):
+        new += 1
+        new_estates.append(estate)
 
 #delete duplicates
 for duplicate in duplicates:

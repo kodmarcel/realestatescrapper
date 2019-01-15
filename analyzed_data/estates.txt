@@ -1,3 +1,16 @@
+points: 121.52631914747144
+price: 119000.0
+size: 120.1
+psm: 990.8409658617819
+distance: 0.15470468120260225
+floor: 
+location: 
+found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
+built: 1940.0
+renewed: 
+parsed: 14.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-vic-3-sobno-12010-m2-prodam-1341239327.html
+
 points: 107.6249525800269
 price: 119000.0
 size: 120.1
@@ -127,6 +140,19 @@ built: 1998.0
 renewed: 
 parsed: 11.01.2019 
 url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-25-sobno-ljubljana-mesto-moste-polje-zalog-601-m2--1338265793.html
+
+points: 55.48541139950697
+price: 105000.0
+size: 56.4
+psm: 1861.7021276595744
+distance: 1.8365225407140717
+floor: 1
+location: LJ. VIČ
+found_location: Vič, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1127, Slovenija
+built: 1961.0
+renewed: 
+parsed: 13.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-stanovanje_6237395/
 
 points: 55.06907748935617
 price: 109800.0
@@ -413,6 +439,19 @@ built: 2009.0
 renewed: 
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6234118/
+
+points: 45.42462329628854
+price: 110000.0
+size: 48.5
+psm: 2268.041237113402
+distance: 1.955111685486496
+floor: 1
+location: LJ. VIČ, RAKOVNIK, OB DOLENJSKI CESTI
+found_location: Rakovnik, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1108, Slovenija
+built: 1900.0
+renewed: 
+parsed: 14.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-rakovnik-ob-dolenjski-cesti-stanovanje_6237765/
 
 points: 45.37419729157381
 price: 127000.0
@@ -1012,6 +1051,19 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-blizina-park-tivoli-stanovanje_6216616/
 
+points: 39.88846077707106
+price: 124900.0
+size: 50.6
+psm: 2468.379446640316
+distance: 2.59579069009869
+floor: 4
+location: LJ. MOSTE
+found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
+built: 1961.0
+renewed: 
+parsed: 14.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6237398/
+
 points: 39.386289285362956
 price: 119500.0
 size: 70.4
@@ -1245,6 +1297,32 @@ built: 1930.0
 renewed: 
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-stanovanje_6219881/
+
+points: 37.17965449155436
+price: 130000.0
+size: 53.6
+psm: 2425.373134328358
+distance: 4.324570865289366
+floor: 12
+location: FUŽINE, LJ.
+found_location: Fužine, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1260, Slovenija
+built: 1987.0
+renewed: 
+parsed: 15.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/fuzine-lj-stanovanje_6237851/
+
+points: 36.89684551851076
+price: 128000.0
+size: 42.5
+psm: 3011.764705882353
+distance: 1.955111685486496
+floor: 4
+location: RAKOVNIK, BLIŽINA CENTRA
+found_location: Rakovnik, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1108, Slovenija
+built: 1989.0
+renewed: 
+parsed: 14.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/rakovnik-blizina-centra-stanovanje_6237762/
 
 points: 36.87907748935616
 price: 135000.0
@@ -1571,6 +1649,32 @@ renewed:
 parsed: 05.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6230737/
 
+points: 34.4217941104044
+price: 121500.0
+size: 44.0
+psm: 2761.3636363636365
+distance: 2.59579069009869
+floor: 2
+location: LJ. MOSTE
+found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
+built: 1932.0
+renewed: 
+parsed: 14.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6237658/
+
+points: 34.38018860046727
+price: 119900.0
+size: 47.4
+psm: 2529.535864978903
+distance: 2.4164426791502653
+floor: P
+location: LJ. BEŽIGRAD, V BLIŽINI FAKULTET
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1984.0
+renewed: 
+parsed: 13.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-v-blizini-fakultet-stanovanje_6237303/
+
 points: 34.350707917058195
 price: 115500.0
 size: 42.0
@@ -1882,6 +1986,19 @@ built: 1980.0
 renewed: 
 parsed: 08.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-blizina-fakultet-stanovanje_6236303/
+
+points: 31.557966378245055
+price: 130000.0
+size: 41.0
+psm: 3170.731707317073
+distance: 2.4164426791502653
+floor: 4
+location: LJ. BEŽIGRAD, BLIŽINA FAKULTET
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1980.0
+renewed: 
+parsed: 14.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-blizina-fakultet-stanovanje_6237715/
 
 points: 31.557966378245055
 price: 130000.0
@@ -2636,6 +2753,19 @@ built: 1888.0
 renewed: 
 parsed: 07.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6235758/
+
+points: 25.969077489356163
+price: 135000.0
+size: 46.8
+psm: 2884.6153846153848
+distance: 2.4164426791502653
+floor: P
+location: LJ. BEŽIGRAD
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1888.0
+renewed: 
+parsed: 14.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6237527/
 
 points: 25.882768047576953
 price: 125000.0

@@ -2,6 +2,10 @@
 
 PROJECT_FOLDER="/home/marcel/Projects/RealEstateScrapper/"
 
+ARCHIVE_REPORTS="reports/report_"
+NOW=$(date +'%Y_%m_%d') 
+
+
 #TO="salmic.marcel@gmail.com, aneja.kutin@gmail.com, st-3-3tg7u3u59v@glockapps.com"
 TO="salmic.marcel@gmail.com, aneja.kutin@gmail.com"
 FROM="real-estate-checker@desktop.com"
@@ -9,6 +13,7 @@ FROM="real-estate-checker@desktop.com"
 
 cd $PROJECT_FOLDER
 
+find $PROJECT_FOLDER$ARCHIVE_REPORTS* -mtime +7 -exec rm{} \;
 
 
 echo "Scraping estates data"
@@ -31,6 +36,11 @@ logger -t realestatechecker -- Analyzing estates data
 CURRENT_ADDS=$(python real_estate_analysis/estate_analysis.py)
 
 logger -t realestatechecker -- Checked for new real estate adds
+
+echo "Newest real estate adds
+Today's newest real estates:
+$CURRENT_ADDS" > $PROJECT_FOLDER$ARCHIVE_REPORTS$NOW
+
 
 echo "Subject: Newest real estate adds
 Today's newest real estates:
