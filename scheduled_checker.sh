@@ -37,12 +37,12 @@ CURRENT_ADDS=$(python real_estate_analysis/estate_analysis.py)
 
 logger -t realestatechecker -- Checked for new real estate adds
 
-echo "Newest real estate adds
-Today's newest real estates:
+echo "Newest real estate adds 
+Today's newest real estates - $NOW:
 $CURRENT_ADDS" > $PROJECT_FOLDER$ARCHIVE_REPORTS$NOW
 
 
 echo "Subject: Newest real estate adds
-Today's newest real estates:
+Today's newest real estates - $NOW:
 $CURRENT_ADDS" | sendmail -f ${FROM} ${TO}
 

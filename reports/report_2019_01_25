@@ -1,158 +1,102 @@
-Newest real estate adds
-Today's newest real estates:
-11 new estates: 
-points: 87.52512744373772
-price: 117990.0
-size: 102.6
-psm: 1150.0
-distance: 2.59579069009869
-floor: P
-location: LJ. MOSTE
-found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
+Newest real estate adds 
+Today's newest real estates - 2019_01_25:
+7 new estates: 
+points: 53.31520803636032
+price: 112000.0
+size: 44.0
+psm: 2545.4545454545455
+distance: 0.15470468120260225
+floor: 
+location: Ljubljana
+found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
+built: 2004.0
+renewed: 
+parsed: 25.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-comma-1-sobno-comma-44-m2-comma-prodamo-1341546536.html
+
+
+points: 45.686652190355495
+price: 125000.0
+size: 50.0
+psm: 2500.0
+distance: 2.5522247509104248
+floor: 1
+location: LJ. MOSTE, POKOPALIŠKA ULICA
+found_location: Pokopališka ulica, Savsko naselje, Vodmat, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 2009.0
+renewed: 
+parsed: 25.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-pokopaliska-ulica-stanovanje_6234118/
+
+
+points: 38.23404125039153
+price: 135000.0
+size: 52.8
+psm: 2556.818181818182
+distance: 2.912851376501778
+floor: 1
+location: ZG. ŠIŠKA
+found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
 built: 1970.0
 renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6238208/
+parsed: 25.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/zg-siska-stanovanje_6240936/
 
 
-points: 70.11623855484885
-price: 85000.0
-size: 66.0
-psm: 1287.878787878788
-distance: 2.59579069009869
-floor: K
-location: LJ. MOSTE
-found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1975.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6238386/
-
-
-points: 54.819077489356175
-price: 125000.0
-size: 64.4
-psm: 1940.9937888198756
+points: 36.86907748935617
+price: 135000.0
+size: 50.2
+psm: 2689.2430278884462
 distance: 2.4164426791502653
-floor: 
+floor: 4
 location: LJ. BEŽIGRAD
 found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
-built: 1967.0
+built: 1964.0
 renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6225078/
+parsed: 25.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6241112/
 
 
-points: 47.45464510656964
-price: 131000.0
-size: 59.2
-psm: 2212.837837837838
-distance: 2.355906451019031
+points: 32.96907748935617
+price: 135000.0
+size: 46.3
+psm: 2915.7667386609073
+distance: 2.4164426791502653
+floor: 4/4
+location: Ljubljana, Bežigrad
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1964.0
+renewed: 
+parsed: 25.01.2019 
+url: https://mojikvadrati.com/nepremicnina/183039-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
+
+
+points: 31.557966378245055
+price: 130000.0
+size: 41.0
+psm: 3170.731707317073
+distance: 2.4164426791502653
 floor: 4
-location: KODELJEVO, CENA JE FIKSNA
-found_location: Kodeljevo, Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1963.0
+location: LJ. BEŽIGRAD
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1980.0
 renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/kodeljevo-cena-je-fiksna-stanovanje_6238472/
+parsed: 25.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6240891/
 
 
-points: 37.42179411040439
-price: 120000.0
-size: 54.0
-psm: 2222.222222222222
+points: 28.555127443737724
+price: 125000.0
+size: 46.8
+psm: 2670.940170940171
 distance: 2.59579069009869
 floor: P
 location: LJ. MOSTE
 found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1936.0
+built: 1960.0
 renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6238336/
-
-
-points: 37.17965449155436
-price: 130000.0
-size: 53.6
-psm: 2425.373134328358
-distance: 4.324570865289366
-floor: 12
-location: FUŽINE, LJ.
-found_location: Fužine, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1260, Slovenija
-built: 1987.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/fuzine-lj-stanovanje_6237851/
-
-
-points: 35.89684551851076
-price: 131000.0
-size: 42.5
-psm: 3082.3529411764707
-distance: 1.955111685486496
-floor: 4
-location: RAKOVNIK
-found_location: Rakovnik, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1108, Slovenija
-built: 1989.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/rakovnik-stanovanje_6238685/
-
-
-points: 33.75330796907268
-price: 121500.0
-size: 44.0
-psm: 2761.3636363636365
-distance: 2.756227364018303
-floor: 1
-location: Ulica Vide Pregarčeve
-found_location: Ulica Vide Pregarčeve, Kodeljevo, Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1926.0
-renewed: 
-parsed: 15.01.2019 
-url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-osrednjeslovenska-ljubljana-moste-ulica-vide-pregarceve-2-sobno-44-m2-prodam-1340880488.html
-
-
-points: 33.47690990208327
-price: 123000.0
-size: 44.4
-psm: 2770.2702702702704
-distance: 3.231896233429093
-floor: 
-location: ŠTEPANJSKO NASELJE
-found_location: Štepanjsko naselje, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1977.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/stepanjsko-naselje-stanovanje_6238673/
-
-
-points: 28.584041250391525
-price: 133000.0
-size: 42.9
-psm: 3100.2331002331002
-distance: 2.912851376501778
-floor: 6
-location: LJ. ŠIŠKA
-found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
-built: 1967.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6237692/
-
-
-points: 20.658926773786884
-price: 105000.0
-size: 55.0
-psm: 1909.090909090909
-distance: 8.058878850886893
-floor: P
-location: SOSTRO
-found_location: Sostro, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1261, Slovenija
-built: 1930.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/sostro-stanovanje_6238397/
+parsed: 25.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6240963/
 
 
 
@@ -171,20 +115,6 @@ parsed: 05.01.2019
 url: https://www.nepremicnine.net/oglasi-prodaja/rudnik-stanovanje_6204500/
 
 
-points: 87.52512744373772
-price: 117990.0
-size: 102.6
-psm: 1150.0
-distance: 2.59579069009869
-floor: P
-location: LJ. MOSTE
-found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1970.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6238208/
-
-
 points: 70.98404125039153
 price: 126000.0
 size: 76.3
@@ -197,20 +127,6 @@ built: 2015.0
 renewed: 
 parsed: 07.01.2019 
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6191034/
-
-
-points: 70.11623855484885
-price: 85000.0
-size: 66.0
-psm: 1287.878787878788
-distance: 2.59579069009869
-floor: K
-location: LJ. MOSTE
-found_location: Moste, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1104, Slovenija
-built: 1975.0
-renewed: 
-parsed: 15.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-moste-stanovanje_6238386/
 
 
 points: 67.62486054794557
@@ -339,6 +255,20 @@ parsed: 13.01.2019
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-vic-stanovanje_6237395/
 
 
+points: 55.23574415602284
+price: 125000.0
+size: 64.4
+psm: 1940.9937888198756
+distance: 2.4164426791502653
+floor: 
+location: Ljubljana, Bežigrad
+found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
+built: 1970
+renewed: 
+parsed: 18.01.2019 
+url: https://mojikvadrati.com/nepremicnina/177426-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
+
+
 points: 55.06907748935617
 price: 109800.0
 size: 60.0
@@ -349,7 +279,7 @@ location: Ljubljana, Bežigrad
 found_location: Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1113, Slovenija
 built: 1930.0
 renewed: 
-parsed: 05.01.2019 
+parsed: 22.01.2019 
 url: https://mojikvadrati.com/nepremicnina/177138-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
 
 
@@ -367,6 +297,34 @@ parsed: 15.01.2019
 url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-stanovanje_6225078/
 
 
+points: 53.544223307813624
+price: 104990.0
+size: 52.7
+psm: 1992.2201138519922
+distance: 1.4218743493871429
+floor: VP
+location: LJ. ŠIŠKA, FRANKOPANSKA ULICA
+found_location: Frankopanska ulica, Vrtača, Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1000, Slovenija
+built: 2011.0
+renewed: 
+parsed: 21.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-frankopanska-ulica-stanovanje_6239766/
+
+
+points: 53.31520803636032
+price: 112000.0
+size: 44.0
+psm: 2545.4545454545455
+distance: 0.15470468120260225
+floor: 
+location: Ljubljana
+found_location: Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, Slovenija
+built: 2004.0
+renewed: 
+parsed: 25.01.2019 
+url: http://www.bolha.com/nepremicnine/stanovanja/stanovanja-ljubljana/stanovanje-comma-osrednjeslovenska-comma-ljubljana-comma-1-sobno-comma-44-m2-comma-prodamo-1341546536.html
+
+
 points: 53.00070791705819
 price: 120000.0
 size: 63.4
@@ -377,8 +335,8 @@ location: LJ. ŠIŠKA
 found_location: Šiška, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1001, Slovenija
 built: 1959.0
 renewed: 
-parsed: 09.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6236516/
+parsed: 21.01.2019 
+url: https://www.nepremicnine.net/oglasi-prodaja/lj-siska-stanovanje_6239920/
 
 
 points: 52.42631914747143
@@ -419,19 +377,5 @@ location: Ljubljana, Bežigrad, Savlje
 found_location: Ljubljana - Savlje, Ljubljanska severna obvoznica, Bratovševa ploščad, Savlje, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1131, Slovenija
 built: 1997.0
 renewed: 
-parsed: 05.01.2019 
+parsed: 22.01.2019 
 url: https://mojikvadrati.com/nepremicnina/143662-prodaja-stanovanje-2-sobno-ljubljana-bezigrad
-
-
-points: 49.829459935188076
-price: 110000.0
-size: 59.4
-psm: 1851.851851851852
-distance: 1.1139508921506072
-floor: PK
-location: LJ. BEŽIGRAD, DUNAJSKA - BLIŽINA CENTRA
-found_location: Dunajska cesta, Župančičeva Jama, Bežigrad, Ljubljana, Upravna Enota Ljubljana, Osrednjeslovenska, 1000, Slovenija
-built: 1930.0
-renewed: 
-parsed: 05.01.2019 
-url: https://www.nepremicnine.net/oglasi-prodaja/lj-bezigrad-dunajska-blizina-centra-stanovanje_6231526/
