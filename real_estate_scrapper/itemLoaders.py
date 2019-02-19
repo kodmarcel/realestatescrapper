@@ -14,6 +14,9 @@ def parsePrice(self, values):
     for value in values:
         number = value.split(" ")[0].strip().replace(".", "").replace(",",".").replace('"','')
         yield float(number)
+def parseText(self, values):
+    for value in values:
+        yield value.lower().replace("<","").replace(">"," ").replace("/","").replace('"'," ").strip().replace("\n","").replace("  "," ")
     
 class NepremicnineEstateLoader(ItemLoader):
     default_output_processor = TakeFirst()
@@ -21,6 +24,7 @@ class NepremicnineEstateLoader(ItemLoader):
     built_in = parseInt
     renewed_in = parseInt
     price_in = parsePrice 
+    text_in = parseText
 
 class MojikvadratiEstateLoader(ItemLoader):
     default_output_processor = TakeFirst()
@@ -28,3 +32,4 @@ class MojikvadratiEstateLoader(ItemLoader):
     built_in = parseInt
     renewed_in = parseInt
     price_in = parsePrice 
+    text_in = parseText

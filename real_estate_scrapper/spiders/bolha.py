@@ -51,6 +51,7 @@ class BolhaSpider(scrapy.Spider):
         loader.add_xpath('size', '//table[@class="oglas-podatki"]/tr/td[contains(text(),"Velikost")]/..//b/text()')
         loader.add_xpath('floor', '//table[@class="oglas-podatki"]/tr/td[contains(text(),"Nadstropje")]/..//b/text()')
         loader.add_xpath('built', '//table[@class="oglas-podatki"]/tr/td[contains(text(),"Leto izgradnje")]/..//b/text()')
+        loader.add_xpath('text', '//table[@class="main-table"]')
         loader.add_value('url',response.url)
         loader.add_value('parsed', now.strftime("%d.%m.%Y "))
         return loader.load_item() 

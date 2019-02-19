@@ -31,8 +31,9 @@ output_path = analyzed_data_folder + analyzed_data_filename
 readable_path = analyzed_data_folder + "estates.txt"
 
 
-#Ignored estates location
+#Ignored estates location and blasklist words location
 ignored_path = project_folder + "ignored_estates"
+blacklist_path = project_folder + "blacklist"
 
 #Desiredi estate locations
 kongresni_location = geocoder.osm("Kongresni trg")
@@ -51,11 +52,11 @@ built_ratio = 5
 #Desired output
 header = ['points', 'price', 'size', 'psm', 'distance', 'floor', 'location','found_location', 'built' , 'renewed', 'parsed', 'url']
 
-def get_ignored(path):
-    with open(ignored_path,'r') as ignored:
-        lines = ignored.readlines()
+def get_file(path):
+    with open(path,'r') as i_file:
+        lines = i_file.readlines()
     for i in range(len(lines)):
-        lines[i] = strip_url(lines[i].strip())
+        lines[i] = strip_url(lines[i].strip()).lower()
     return lines
 
 def get_parsed_data(ignored_urls):
@@ -94,6 +95,8 @@ def parse_estate(estate):
         estate['points'] = float(estate['points'])
     if 'distance' in estate.keys():
         estate['distance'] = float(estate['distance'])
+    if 'text' in estate.keys():
+        estate['text'] = estate['text'].lower()
 
 
 def get_analyzed_data():
@@ -112,7 +115,7 @@ def store_estates(estates, filename):
     #keys = estates[0].keys()
     with open(filename, "w") as out_file:
         #dict_writer = csv.DictWriter(out_file, keys)
-        dict_writer = csv.DictWriter(out_file, header)
+        dict_writer = csv.DictWriter(out_file, header,extrasaction='ignore')
         dict_writer.writeheader()
         dict_writer.writerows(estates)
 
@@ -136,22 +139,35 @@ def sort_estates(estates, field):
     return sorted(estates, key= lambda estate: estate[field], reverse=True)
 
 def grade_estate(estate):
-    points = 0 
-    price_points = (130 - estate['price']/1000)*price_ratio / (130-70)
-    size_points = estate['size'] - 43 * size_ratio /(90-43)
-    built_points = max(0,(estate['built']-1964)*built_ratio/(2000-1964))
-    distance_points = (6-estate['distance'])*distance_ratio/6
-    floor = estate['floor']
-    floor_points = 10
-    if floor == 'M':
-        floor_points = 5
-    elif floor == 'VP':
-        floor_points = 3.5
-    elif floor == 'P' or floor == 'Pritličje':
-        floor_points = 2.5 
-    elif floor == 'PK' or floor == 'Polklet':
-        floor_points = 0
-    return points + price_points + size_points + built_points + distance_points + floor_points 
+    for blacklist_word in blacklist_words:
+        if (blacklist_word in estate['text'] or blacklist_word in estate['location'].lower()):
+            return 0
+    if estate['size'] < 38:
+        size_points = 0
+    elif estate['size'] < 45:
+        size_points = 30
+    elif estate['size'] < 50:
+        size_points = 60
+    elif estate['size'] < 55:
+        size_points = 70
+    elif estate['size'] < 60:
+        size_points = 80
+    else:
+        size_points = 100
+    if estate['distance'] < 1:
+        distance_points = 70
+    elif estate['distance'] < 2: 
+        distance_points = 100
+    elif estate['distance'] < 3: 
+        distance_points = 80
+    elif estate['distance'] < 4: 
+        distance_points = 60
+    elif estate['distance'] < 5: 
+        distance_points = 40
+    else:
+        distance_points = 20
+
+    return size_points + distance_points
 
 def find_location(location):
     locations = location.lower().replace("-", ",").replace("lj.", "ljubljana,").split(",")
@@ -177,7 +193,8 @@ def get_distance(location, center):
         distance = -1
     return distance
 #print('Getting saved data')
-ignored_urls = get_ignored(ignored_path)
+ignored_urls = get_file(ignored_path)
+blacklist_words = get_file(blacklist_path)
 estates = get_parsed_data(ignored_urls)
 old_estates = get_analyzed_data()
 new = 0

@@ -53,7 +53,13 @@ class NepremicnineSpider(scrapy.Spider):
             loader.add_xpath('floor', './/span[@class="atribut"]/strong/text()')
             loader.add_value('url', response.urljoin(relative_url))
             loader.add_value('parsed', now.strftime("%d.%m.%Y "))
-            yield loader.load_item()
+            yield Request(response.urljoin(relative_url), meta={'loader': loader}, callback = self.parse_text)
         next_page_url = response.urljoin(response.xpath('//a[@class="next"]/@href').extract_first())
         if next_page_url:
             yield Request(next_page_url, callback=self.parse_estate_listing)
+
+    def parse_text(self, response):
+        loader = response.meta['loader']
+        text = response.xpath('//div[@id="opis"]').extract_first().split('<div class="spacer">')[0]
+        loader.add_value('text', text)
+        return loader.load_item()

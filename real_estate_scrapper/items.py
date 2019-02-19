@@ -16,3 +16,4 @@ class Estate(scrapy.Item):
     url = scrapy.Field()
     size = scrapy.Field()
     parsed = scrapy.Field()
+    text = scrapy.Field()
