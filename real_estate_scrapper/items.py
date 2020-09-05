@@ -15,5 +15,6 @@ class Estate(scrapy.Item):
     renewed = scrapy.Field()
     url = scrapy.Field()
     size = scrapy.Field()
-    parsed = scrapy.Field()
     text = scrapy.Field()
+    page = scrapy.Field()
+    capture_date = scrapy.Field()

@@ -6,13 +6,48 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import json
+import datetime
+from scrapy.exporters import CsvItemExporter
+from scrapy import signals
 
-save_file = "scraped_data/estates.json"
+column_order = ["page","capture_date","location","price","size","built","floor","url","text"]
+
+now = datetime.datetime.now()
+
+class CSVPipeline(object):
+
+  def __init__(self):
+    self.files = {}
+
+  @classmethod
+  def from_crawler(cls, crawler):
+    pipeline = cls()
+    crawler.signals.connect(pipeline.spider_opened, signals.spider_opened)
+    crawler.signals.connect(pipeline.spider_closed, signals.spider_closed)
+    return pipeline
+
+  def spider_opened(self, spider):
+    filename = spider.scrape_file if spider.scrape_file else spider.config_name
+    file = open(filename, 'a+b')
+    self.files[spider] = file
+    self.exporter = CsvItemExporter(file)
+    self.exporter.fields_to_export = column_order
+
+    self.exporter.start_exporting()
+
+  def spider_closed(self, spider):
+    self.exporter.finish_exporting()
+    file = self.files.pop(spider)
+    file.close()
+
+  def process_item(self, item, spider):
+    self.exporter.export_item(item)
+    return item
 
 class JsonWriterPipeline(object):
     def open_spider(self, spider):
-        self.file = open(save_file, 'w')
-    
+        self.file = open("scraped_data/" + spider.name + ".json", 'w')
+
     def close_spider(self, spider):
         self.file.close()
 

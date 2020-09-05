@@ -1,35 +1,28 @@
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose, Join, TakeFirst
 
-def parseInt(self, values):
+def parseYear(values):
     for value in values:
         yield int(value)
 
-def parseSize(self, values):
+def parseSize(values):
     for value in values:
         number = value.split(" ")[0].strip().replace(",", ".").replace('"', '')
         yield float(number)
-    
-def parsePrice(self, values):
+
+def parsePrice(values):
     for value in values:
         number = value.split(" ")[0].strip().replace(".", "").replace(",",".").replace('"','')
         yield float(number)
-def parseText(self, values):
+
+def parseText(values):
     for value in values:
         yield value.lower().replace("<","").replace(">"," ").replace("/","").replace('"'," ").strip().replace("\n","").replace("  "," ")
-    
-class NepremicnineEstateLoader(ItemLoader):
-    default_output_processor = TakeFirst()
-    size_in = parseSize
-    built_in = parseInt
-    renewed_in = parseInt
-    price_in = parsePrice 
-    text_in = parseText
 
-class MojikvadratiEstateLoader(ItemLoader):
+class EstateLoader(ItemLoader):
     default_output_processor = TakeFirst()
     size_in = parseSize
-    built_in = parseInt
-    renewed_in = parseInt
-    price_in = parsePrice 
+    price_in = parsePrice
+    built_in = parseYear
+    renewed_in = parseYear
     text_in = parseText
