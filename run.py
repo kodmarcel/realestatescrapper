@@ -60,10 +60,11 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
 
     print("###############")
     print("Getting archived data")
-    try:
+
+    if os.path.exists(archive_data_file):
         current_data = pd.read_csv(archive_data_file, parse_dates = ["first_capture_date", "last_capture_date"])
         current_data.new = False
-    except:
+    else:
         current_data = scraped_data
         current_data = current_data.drop(columns = ["capture_date"])
 
