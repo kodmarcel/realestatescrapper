@@ -15,10 +15,7 @@ from datetime import datetime
 import json
 import geocoder
 
-
-spider_loader = SpiderLoader(get_project_settings())
-all_spiders = spider_loader.list()
-
+columns_ordering = ["new","points","price", "location", "size", "url", "distance", "active", "first_capture_date", "last_capture_date", "found_location", "built", "floor", "page", "text"]
 
 def execute_spiders(urls, scrape_file):
 
@@ -62,22 +59,16 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
     print("###############")
     print("Getting archived data")
     try:
-        previous_data = pd.read_csv(archive_data_file, parse_date = ["first_capture_date", "last_capture_date"])
-        previous_data.new = False
+        current_data = pd.read_csv(archive_data_file, parse_dates = ["first_capture_date", "last_capture_date"])
+        current_data.new = False
     except:
-        previous_data = None
-
-    # if we get previous data make it current and remove from it the ons that dissapeared
-    if previous_data:
-        current_data = previous_data
-    else:# if no previous data all scraped data is new
         current_data = scraped_data
         current_data = current_data.drop(columns = ["capture_date"])
 
 
     # mark all current_data not in the scraped_data as gone
     current_data.active = current_data.apply(lambda x: x.url in scraped_data.url.values, axis = 1)
-    current_data[current_data.url.isin(scraped_data.url), "last_capture_date"] = current_data.loc[current_data.url.isin(scraped_data.url),"url"].map(scraped_data.set_index("url").capture_date)
+    current_data.loc[current_data.url.isin(scraped_data.url), "last_capture_date"] = current_data.loc[current_data.url.isin(scraped_data.url),"url"].map(scraped_data.loc[scraped_data.url.isin(current_data.url)].set_index("url").capture_date)
 
     # add new data
     scraped_data = scraped_data.drop(columns = ["capture_date"])
@@ -87,13 +78,13 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
     current_data.location = current_data.location.apply(lambda x: clear_location(x))
     print("###############")
     print("Removing ignored adds")
-    current_data.drop(current_data.loc[current_data.url.isin(ignore_list)])
+    current_data = current_data.drop(current_data[current_data.url.isin(ignore_list)].index)
     for ignore_word in ignore_list:
         if "http" in ignore_word:
             continue
         ignore_word = ignore_word.lower()
-        current_data.drop(current_data.loc[current_data.text.str.contains(ignore_word)])
-        current_data.drop(current_data.loc[current_data.location.str.contains(ignore_word)])
+        current_data = current_data.drop(current_data.loc[current_data.text.str.lower().str.contains(ignore_word)].index)
+        current_data = current_data.drop(current_data.loc[current_data.location.str.contains(ignore_word)].index)
 
     print("###############")
     print("Finding locations")
@@ -117,19 +108,19 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
     print("sorting data")
 
     sorted_list = current_data.sort_values(by="points", ascending = False)
-    sorted_list.to_csv(archive_data_file, index = False, encoding='utf-8')
+    sorted_list[columns_ordering].to_csv(archive_data_file, index = False, encoding='utf-8')
 
     print("###############")
-    print("Top 10")
+    print("Top 50")
     pd.set_option('display.max_colwidth', None)
-    print(sorted_list[print_columns].head(10))
+    print(sorted_list[print_columns].head(50).to_string(index=False))
 
     print("###############")
     print("Newest")
-    print(sorted_list.loc[sorted_list.new])
+    print(sorted_list.loc[sorted_list.new, print_columns].to_string(index=False))
 
     print("###############")
-    print("All done archive saved to: " + archive_name)
+    print("All done archive saved to: " + archive_data_file)
     print()
 
 def clear_location(location):
@@ -155,7 +146,7 @@ def get_distance(location, center):
     return distance
 
 def main(name, urls, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns, mails = None):
-    with open(scrape_file): # to erase the contents
+    with open(scrape_file, "w"): # to erase the contents
         pass
 
     execute_spiders(urls, scrape_file)
