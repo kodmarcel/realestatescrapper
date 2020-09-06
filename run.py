@@ -14,6 +14,7 @@ import pandas as pd
 from datetime import datetime
 import json
 import geocoder
+import os
 
 now = datetime.now()
 columns_ordering = ["new","points","price", "location", "size", "url", "distance", "active", "first_capture_date", "last_capture_date", "found_location", "built", "floor", "page", "text"]
@@ -156,9 +157,8 @@ def get_distance(location, center):
     return distance
 
 def main(name, urls, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns, mails = None):
-    with open(scrape_file, "w"): # to erase the contents
-        pass
-
+    if os.path.exists(scrape_file):
+        os.remove(scrape_file)
     execute_spiders(urls, scrape_file)
     analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns)
     #send_mails()
