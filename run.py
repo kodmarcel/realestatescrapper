@@ -111,9 +111,9 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
     sorted_list[columns_ordering].to_csv(archive_data_file, index = False, encoding='utf-8')
 
     print("###############")
-    print("Top 50")
+    print("Top 10")
     pd.set_option('display.max_colwidth', None)
-    print(sorted_list[print_columns].head(50).to_string(index=False))
+    print(sorted_list[print_columns].head(10).to_string(index=False))
 
     print("###############")
     print("Newest")
