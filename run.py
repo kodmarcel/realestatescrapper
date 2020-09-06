@@ -69,12 +69,14 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
 
     # mark all current_data not in the scraped_data as gone
     current_data.active = current_data.apply(lambda x: x.url in scraped_data.url.values, axis = 1)
+    # update capture dates
     current_data.loc[current_data.url.isin(scraped_data.url), "last_capture_date"] = current_data.loc[current_data.url.isin(scraped_data.url),"url"].map(scraped_data.loc[scraped_data.url.isin(current_data.url)].set_index("url").capture_date)
 
     # add new data
     scraped_data = scraped_data.drop(columns = ["capture_date"])
     current_data = pd.concat([current_data, scraped_data.loc[~scraped_data.url.isin(current_data.url)]])
 
+    current_data["captured_today"] = current_data.first_capture_date.dt.date == now.date()
     # fix locations
     current_data.location = current_data.location.apply(lambda x: clear_location(x))
     print("###############")
@@ -110,16 +112,15 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
 
     sorted_list = current_data.sort_values(by="points", ascending = False)
     sorted_list[columns_ordering].to_csv(archive_data_file, index = False, encoding='utf-8')
-
-    sorted_list["captured_today"] = sorted_list.first_capture_date.dt.date == now.date()
-
     print("###############")
-    print("Top 10")
+    print("Top 20")
     pd.set_option('display.max_colwidth', None)
-    print(sorted_list[print_columns].head(10).to_string(index=False))
+    print(sorted_list[print_columns].head(20).to_string(index=False))
+
+    print("Got a total of: " + str(len(sorted_list.index)) + " ads")
 
     print("###############")
-    print("Newest")
+    print("New since last run: " + str(len(sorted_list.loc[sorted_list.new])))
     print(sorted_list.loc[sorted_list.new, print_columns].to_string(index=False))
 
     print("###############")
