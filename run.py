@@ -80,15 +80,14 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
     # fix locations
     current_data.location = current_data.location.apply(lambda x: clear_location(x))
     print("###############")
-    print("Removing ignored adds")
-    current_data = current_data.drop(current_data[current_data.url.isin(ignore_list)].index)
+    print("Removing ignored ads")
+    current_data = current_data.loc[~current_data.url.isin(ignore_list)]
     for ignore_word in ignore_list:
         if "http" in ignore_word:
             continue
         ignore_word = ignore_word.lower()
-        current_data = current_data.drop(current_data.loc[current_data.text.str.lower().str.contains(ignore_word)].index)
-        current_data = current_data.drop(current_data.loc[current_data.location.str.contains(ignore_word)].index)
-
+        current_data = current_data.loc[~current_data.text.str.lower().str.contains(ignore_word)]
+        current_data = current_data.loc[~current_data.location.str.contains(ignore_word)]
     print("###############")
     print("Finding locations")
     # fix locations
@@ -108,10 +107,12 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
     current_data["points"] = current_data.apply(lambda x: calculate_points(x), axis=1)
 
     print("###############")
-    print("sorting data")
+    print("sorting and storing data")
 
     sorted_list = current_data.sort_values(by="points", ascending = False)
+
     sorted_list[columns_ordering].to_csv(archive_data_file, index = False, encoding='utf-8')
+
     print("###############")
     print("Top 20")
     pd.set_option('display.max_colwidth', None)
@@ -124,8 +125,13 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
     print(sorted_list.loc[sorted_list.new, print_columns].to_string(index=False))
 
     print("###############")
-    print("All done archive saved to: " + archive_data_file)
+    print("Statistics")
+    print(sorted_list.describe())
     print()
+
+    print("###############")
+    print("All done archive saved to: " + archive_data_file)
+
 
 def clear_location(location):
      locations = location.lower().replace("-", ",").replace("lj.", "ljubljana,").split(",")
