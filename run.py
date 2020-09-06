@@ -15,6 +15,7 @@ from datetime import datetime
 import json
 import geocoder
 
+now = datetime.now()
 columns_ordering = ["new","points","price", "location", "size", "url", "distance", "active", "first_capture_date", "last_capture_date", "found_location", "built", "floor", "page", "text"]
 
 def execute_spiders(urls, scrape_file):
@@ -109,6 +110,8 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
 
     sorted_list = current_data.sort_values(by="points", ascending = False)
     sorted_list[columns_ordering].to_csv(archive_data_file, index = False, encoding='utf-8')
+
+    sorted_list["captured_today"] = sorted_list.first_capture_date.dt.date == now.date()
 
     print("###############")
     print("Top 10")
