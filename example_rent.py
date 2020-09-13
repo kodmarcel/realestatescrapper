@@ -1,4 +1,9 @@
-from run import main, analyze_data
+from run import main,analyze_data, send_mail
+import smtplib
+
+gmail_user = "mail_for_sending@gmail.com"
+gmail_password = "password"
+to = ["mail1@gmail.com", "mail2@email.com"]
 
 name = "example_rent"
 scrap_urls = ["https://www.nepremicnine.net/oglasi-oddaja/ljubljana-mesto/stanovanje/garsonjera,1-sobno,1.5-sobno/cena-do-500-eur-na-mesec/"]
@@ -64,5 +69,9 @@ def calculate_points(estate):
 
     return distance_points + price_points + old
 
-main(name, scrap_urls, ignore_list, calculate_points, distance_from,scrape_file, archive_data_file, print_columns )
-analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns)
+
+
+data = main(name, scrap_urls, ignore_list, calculate_points, distance_from,scrape_file, archive_data_file, print_columns )
+if len(data["new"]) < 100:
+    message = "#####NEW: \n" +data["new"] +  "\n######TOP 20:\n" + data["top20"]
+    send_mail(gmail_user, gmail_password,to, message)

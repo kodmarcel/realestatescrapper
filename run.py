@@ -15,6 +15,7 @@ from datetime import datetime
 import json
 import geocoder
 import os
+import smtplib
 
 now = datetime.now()
 columns_ordering = ["new","points","price", "location", "size", "url", "distance", "active", "first_capture_date", "last_capture_date", "found_location", "built", "floor", "page", "text"]
@@ -133,6 +134,8 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
 
     print("###############")
     print("All done archive saved to: " + archive_data_file)
+    output = {"all":sorted_list, "new":sorted_list.loc[sorted_list.new, print_columns].to_string(index=False), "top20": sorted_list[print_columns].head(20).to_string(index=False)}
+    return output
 
 
 def clear_location(location):
@@ -157,10 +160,33 @@ def get_distance(location, center):
         distance = -1
     return distance
 
+
+def send_mail(gmail_user, gmail_password, to, message):
+
+    sent_from = gmail_user
+    subject = 'RealestateScrapper report'
+
+    email_text = """\
+        From: %s
+        To: %s
+        Subject: %s
+
+        %s
+        """ % (sent_from, ", ".join(to), subject, message)
+
+    try:
+        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+        server.ehlo()
+        server.login(gmail_user, gmail_password)
+        server.sendmail(sent_from, to, email_text.encode("utf-8"))
+        server.close()
+        print('Email sent!')
+    except:
+        print('Something went wrong...')
+
 def main(name, urls, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns, mails = None):
     if os.path.exists(scrape_file):
         os.remove(scrape_file)
     execute_spiders(urls, scrape_file)
-    analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns)
-    #send_mails()
-    sys.exit(0)
+    data = analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns)
+    return data
