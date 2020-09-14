@@ -5,7 +5,6 @@
 # do nt forget to chmox +x this file
 # for me this is
 # 0 10,21 * * * /home/marcel/Projects/realestatescrapper/example_rent_cronjob.sh
-echo "Aha" >> /home/marcel/tmp
 cd /home/marcel/Projects/realestatescrapper # set to your path
 source venv/bin/activate
-python example_rent.py
+python example_rent.py &>> log

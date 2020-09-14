@@ -72,6 +72,5 @@ def calculate_points(estate):
 
 
 data = main(name, scrap_urls, ignore_list, calculate_points, distance_from,scrape_file, archive_data_file, print_columns )
-if len(data["new"]) < 100:
-    message = "#####NEW: \n" +data["new"] +  "\n######TOP 20:\n" + data["top20"]
-    send_mail(gmail_user, gmail_password,to, message)
+message = "#####NEW: \n" +data["new"] +  "\n######TOP 20:\n" + data["top20"]
+send_mail(gmail_user, gmail_password,to, message)
