@@ -46,7 +46,7 @@ class BolhaSpider(scrapy.Spider):
 
         size = response.xpath('//table[contains(@class, "table-summary")]//tr/th[contains(text(),"površina")]/..//td/text()').extract_first()
         if size is None:
-            size = "999"
+            size = "-1"
         size = size.replace("m²", "").replace(",", ".").strip()
         loader.add_value('size', str(size))
         loader.add_xpath('floor', '//table[contains(@class, "table-summary")]//tr/th[contains(text(),"Nadstropje")]/..//td/text()')
