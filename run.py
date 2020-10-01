@@ -26,8 +26,10 @@ def execute_spiders(urls, scrape_file):
 
     spiders = []
     for url in urls:
-        if "nepremicnine" in url:
+        if "nepremicnine.net" in url:
             spider_name = "nepremicnine"
+        elif "bolha.com" in url:
+            spider_name = "bolha"
         else:
             print("No spdider for url: " + url + ", skipping ...")
             continue

@@ -6,7 +6,7 @@ gmail_password = "password"
 to = ["mail1@gmail.com", "mail2@email.com"]
 
 name = "example_rent"
-scrap_urls = ["https://www.nepremicnine.net/oglasi-oddaja/ljubljana-mesto/stanovanje/garsonjera,1-sobno,1.5-sobno/cena-do-500-eur-na-mesec/"]
+scrap_urls = ["https://www.nepremicnine.net/oglasi-oddaja/ljubljana-mesto/stanovanje/garsonjera,1-sobno,1.5-sobno/cena-do-500-eur-na-mesec/", "https://www.bolha.com/prodaja-stanovanja/ljubljana-siska"]
 distance_from = "Kongresni trg, Ljubljana, Slovenija"
 ignore_list = ["oddamo sob","oddam sob","oddaja se sob", "oddajam sobo", "študentsko sobo", "oddaja se postelj","oddaja postelj","oddamo postelj", "oddamo dvoposteljno", "souporab","delit", "skupno", "že stanuje", "oddamo posteljo", "postelji oddamo", "https://www.nepremicnine.net/oglasi-oddaja/lj-siska-stanovanje_6360581/", "https://www.nepremicnine.net/oglasi-oddaja/jezica-bezigrad-ruski-car-stanovanje_6359280/", "https://www.nepremicnine.net/oglasi-oddaja/lj-vic-sibeniska-ulica-5-stanovanje_6309122/", "https://www.nepremicnine.net/oglasi-oddaja/lj-vic-rozna-dolina-stanovanje_6203756/", "https://www.nepremicnine.net/oglasi-oddaja/lj-moste-stanovanje_6323521/","https://www.nepremicnine.net/oglasi-oddaja/lj-vic-stanovanje_6359292/"]
 scrape_file = "scraped_data/" + name + ".csv"
