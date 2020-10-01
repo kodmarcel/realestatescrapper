@@ -17,10 +17,11 @@ class NepremicnineSpider(scrapy.Spider):
     name = 'nepremicnine'
     allowed_domains = ['nepremicnine.net']
 
-    def __init__(self, url = None, scrape_file = None, *args, **kwargs):
+    def __init__(self, url = None, scrape_file = None, export_headers = True, *args, **kwargs):
         super(NepremicnineSpider, self).__init__(*args, **kwargs)
         self.start_urls = [url]
         self.scrape_file = scrape_file
+        self.export_headers = export_headers
 
     def parse(self, response):
         estates = response.xpath('//div[contains(@class, "oglas_container")]') # poberemo vse oglase na strani

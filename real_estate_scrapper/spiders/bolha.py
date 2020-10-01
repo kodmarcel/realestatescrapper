@@ -15,10 +15,11 @@ class BolhaSpider(scrapy.Spider):
     start_urls = [
         'http://www.bolha.com/nepremicnine/stanovanja/?location=Osrednjeslovenska%2FLjubljana%2F&viewType=30&priceSortField=50000%7C135000&adTypeH=00_Prodam%2F&reSize=43|295']
 
-    def __init__(self, url = None, scrape_file = None, *args, **kwargs):
+    def __init__(self, url = None, scrape_file = None, export_headers = True, *args, **kwargs):
         super(BolhaSpider, self).__init__(*args, **kwargs)
         self.start_urls = [url]
         self.scrape_file = scrape_file
+        self.export_headers = export_headers
 
     def parse(self, response):
         ads = response.xpath('//div[contains(@class, "EntityList--Regular")]//li[contains(@class, "EntityList-item")]')

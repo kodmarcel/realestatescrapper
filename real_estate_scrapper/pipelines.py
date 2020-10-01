@@ -30,7 +30,7 @@ class CSVPipeline(object):
     filename = spider.scrape_file if spider.scrape_file else spider.config_name
     file = open(filename, 'a+b')
     self.files[spider] = file
-    self.exporter = CsvItemExporter(file)
+    self.exporter = CsvItemExporter(file, spider.export_headers)
     self.exporter.fields_to_export = column_order
 
     self.exporter.start_exporting()

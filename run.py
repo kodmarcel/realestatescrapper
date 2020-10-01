@@ -25,6 +25,7 @@ def execute_spiders(urls, scrape_file):
     process = CrawlerProcess(get_project_settings())
 
     spiders = []
+    export_headers = True
     for url in urls:
         if "nepremicnine.net" in url:
             spider_name = "nepremicnine"
@@ -35,7 +36,8 @@ def execute_spiders(urls, scrape_file):
             continue
         spider = process.create_crawler(spider_name)
         spiders.append(spider)
-        process.crawl(spider, url = url, scrape_file = scrape_file)
+        process.crawl(spider, url = url, scrape_file = scrape_file, export_headers = export_headers)
+        export_headers = False #so only first wil export them
 
     process.start() # the script will block here until the crawling is finished
 
@@ -91,7 +93,8 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
         if "http" in ignore_word:
             continue
         ignore_word = ignore_word.lower()
-        current_data = current_data.loc[~current_data.text.str.lower().str.contains(ignore_word)]
+        print(ignore_word)
+        current_data = current_data.loc[~(current_data.text.astype(str).str.lower().str.contains(ignore_word))]
         current_data = current_data.loc[~current_data.location.str.contains(ignore_word)]
     print("###############")
     print("Finding locations")
