@@ -7,13 +7,10 @@ import datetime
 import csv
 
 now = datetime.datetime.now()
-pages_limit = "10"
 
 class BolhaSpider(scrapy.Spider):
     name = 'bolha'
     allowed_domains = ['www.bolha.com']
-    start_urls = [
-        'http://www.bolha.com/nepremicnine/stanovanja/?location=Osrednjeslovenska%2FLjubljana%2F&viewType=30&priceSortField=50000%7C135000&adTypeH=00_Prodam%2F&reSize=43|295']
 
     def __init__(self, url = None, scrape_file = None, export_headers = True, *args, **kwargs):
         super(BolhaSpider, self).__init__(*args, **kwargs)
@@ -21,16 +18,20 @@ class BolhaSpider(scrapy.Spider):
         self.scrape_file = scrape_file
         self.export_headers = export_headers
 
-    def parse(self, response):
+    def parse(self, response, origin_url = None):
         ads = response.xpath('//div[contains(@class, "EntityList--Regular")]//li[contains(@class, "EntityList-item")]')
         for ad in ads:
             url = response.urljoin(ad.xpath('.//a/@href').extract_first())
             yield Request(url, callback=self.parse_estate)
+
         next_page = response.xpath('//li[contains(@class, "Pagination-item--next")]/button/@data-page').extract_first()
-        if next_page == pages_limit:
-            return
+        if origin_url == None:
+            origin_url = response.url
         if next_page:
-            yield response.follow(response.urljoin("?page=")+next_page)
+
+            if "?" not in origin_url:
+                origin_url + "?"
+            yield response.follow(origin_url + "&page=" + next_page, cb_kwargs = {"origin_url": origin_url})
 
     def parse_estate(self, response):
         loader = EstateLoader(item=Estate(), response=response)
@@ -45,11 +46,11 @@ class BolhaSpider(scrapy.Spider):
 
         size = response.xpath('//table[contains(@class, "table-summary")]//tr/th[contains(text(),"površina")]/..//td/text()').extract_first()
         if size is None:
-            size = "999"
+            size = "-1"
         size = size.replace("m²", "").replace(",", ".").strip()
         loader.add_value('size', str(size))
         loader.add_xpath('floor', '//table[contains(@class, "table-summary")]//tr/th[contains(text(),"Nadstropje")]/..//td/text()')
         loader.add_xpath('built', '//table[contains(@class, "table-summary")]//tr/th[contains(text(),"Leto izgradnje")]/..//td/text()')
-        loader.add_xpath('text', '//div[contains(@class, "passage-standard")]//text()')
+        loader.add_xpath('text', '//div[contains(@class, "passage-standard")]//node()')
         loader.add_value('url', response.url)
         return loader.load_item()
