@@ -150,12 +150,35 @@ def clear_location(location):
 def find_location(location, center):
     locations = location.split(",")
     loc = geocoder.osm(location)
-    if (not loc.ok or loc.city != center.city) and len(locations) > 1:
-        loc = geocoder.osm(center.city + "," + locations[-1])
-    if (not loc.ok or loc.city != center.city) and len(locations) > 2:
-        loc = geocoder.osm(center.city + "," + locations[-2])
+    if(loc.city != None):
+        if (not loc.ok or loc.city != center.city) and len(locations) > 1:
+            loc = geocoder.osm(center.city + "," + locations[-1])
+        if (not loc.ok or loc.city != center.city) and len(locations) > 2:
+            loc = geocoder.osm(center.city + "," + locations[-2])
+        if not loc.ok:
+            loc = geocoder.osm(center.city)
+    else:
+        loc = find_location_m(location, center)
+
+    return loc
+
+def find_location_m(location, center):
+    #search in municipality
+    locations = location.split(",")
+    loc = geocoder.osm(location)
+
+    if (not loc.ok or loc.municipality != center.municipality) and len(locations) > 1:
+        loc = geocoder.osm(center.municipality if center.municipality!= None else center.municipality + "," + locations[-1])
+    if (not loc.ok or loc.municipality != center.municipality) and len(locations) > 2:
+        loc = geocoder.osm(center.municipality if center.municipality!= None else center.municipality + "," + locations[-2])
     if not loc.ok:
-        loc = geocoder.osm(center.city)
+        loc = geocoder.osm(center.municipality if center.municipality!= None else center.municipality)
+    
+    if not loc.ok:
+        for i in locations:
+            loc = geocoder.osm(i + ", " + center.municipality + ", Slovenia")
+            if not loc.ok: break
+
     return loc
 
 def get_distance(location, center):
