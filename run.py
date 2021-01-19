@@ -20,6 +20,33 @@ import smtplib
 now = datetime.now()
 columns_ordering = ["new","points","price", "location", "size", "url", "distance", "active", "first_capture_date", "last_capture_date", "found_location", "built", "floor", "page", "text"]
 
+default_scoring_map = {
+    "price": {
+        "type": "reverse",
+        "points_per_unit": 1
+    },
+    "built": {
+        "type": "normal",
+        "points_per_unit": 500
+    },
+    "size": {
+        "type": "normal",
+        "points_per_unit": 2000,
+    },
+    "distance": {
+        "type": "reverse",
+        "points_per_unit": 4000,
+    },
+    "floor": {
+        "type": "contains",
+        "values": ["PK"],
+        "points": -20000
+    },
+    "active": {
+        "type": "cutoff",
+    },
+}
+
 def execute_spiders(urls, scrape_file):
 
     process = CrawlerProcess(get_project_settings())
@@ -50,7 +77,7 @@ def execute_spiders(urls, scrape_file):
         print()
 
 
-def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns):
+def analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, scoring_map = None, calculate_points = None):
     print("###############")
     print("Getting data for analysis")
 
@@ -112,7 +139,10 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
 
     print("###############")
     print("Calculating points")
-    current_data["points"] = current_data.apply(lambda x: calculate_points(x), axis=1)
+    if scoring_map:
+        current_data = score_dataset(current_data, scoring_map)
+    if calculate_points:
+        current_data["points"] = current_data.apply(lambda x: calculate_points(x), axis=1)
 
     print("###############")
     print("sorting and storing data")
@@ -144,7 +174,7 @@ def analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file
 
 
 def clear_location(location):
-     locations = location.lower().replace("-", ",").replace("lj.", "ljubljana,").split(",")
+     locations = str(location).lower().replace("-", ",").replace("lj.", "ljubljana,").split(",")
      return ",".join([x for x in locations if x.find("lokac") == -1])
 
 def find_location(location, center):
@@ -165,6 +195,33 @@ def get_distance(location, center):
         distance = -1
     return distance
 
+def score_dataset(current_data, scoring_map):
+    current_data["points"] = 0
+
+    cutoff_field = ''
+    for field in scoring_map:
+        scoring_list = scoring_map[field]
+        if not type(scoring_list) == list:
+            scoring_list = [scoring_list]
+        for scoring in scoring_list:
+            if scoring["type"] == "normal":
+                current_data["points"] += (current_data.get(field,current_data[field].min()) - current_data[field].min()) * scoring["points_per_unit"]
+            elif scoring["type"] == "reverse":
+                current_data["points"] += (current_data[field].max() - current_data.get(field,current_data[field].max()) ) * scoring["points_per_unit"]
+            elif scoring["type"] == "map":
+                current_data["points"] += current_data[field].map(scoring["points_map"])
+            elif scoring["type"] == "contains":
+                for value in scoring["values"]:
+                    current_data.loc[current_data[field].fillna('').str.lower().str.contains(value.lower()),"points"] += scoring["points"]
+            elif scoring["type"] == "cutoff":
+                cutoff_field = field
+
+    current_data.loc[current_data["points"] < 0,"points"] = 0
+    current_data["points"] = (current_data["points"] - current_data["points"].min()) /  (current_data["points"].max() - current_data["points"].min())  * 100
+    if cutoff_field:
+        current_data.loc[~current_data[cutoff_field],"points"] = - current_data.loc[~current_data[cutoff_field],"points"]
+    current_data["points"] = current_data["points"].fillna(0)
+    return current_data
 
 def send_mail(gmail_user, gmail_password, to, message):
 
@@ -189,9 +246,9 @@ def send_mail(gmail_user, gmail_password, to, message):
     except:
         print('Something went wrong...')
 
-def main(name, urls, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns, mails = None):
+def main(name, urls, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, mails = None, calculate_points = None, scoring_map = default_scoring_map):
     if os.path.exists(scrape_file):
         os.remove(scrape_file)
     execute_spiders(urls, scrape_file)
-    data = analyze_data(name, ignore_list, calculate_points, distance_from, scrape_file, archive_data_file, print_columns)
+    data = analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, calculate_points = calculate_points, scoring_map = scoring_map)
     return data
