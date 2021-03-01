@@ -10,10 +10,20 @@ print_columns = ["points", "location", "price", "size", "distance", "captured_to
 
 
 scoring_map = {
-    "price": {
+    "price": [{
         "type": "reverse",
         "points_per_unit": 1
     },
+    {
+        "type": "lower_than",
+        "value": 1500,
+        "points": -5000000000
+    },
+    {
+        "type": "lower_than",
+        "value": 8500,
+        "points": -500000
+    }],
     "built": {
         "type": "normal",
         "points_per_unit": 500
@@ -37,7 +47,8 @@ scoring_map = {
 }
 
 calculate_points = None
-data = main(name, scrap_urls, ignore_list, distance_from,scrape_file, archive_data_file, print_columns ,calculate_points = calculate_points, scoring_map = scoring_map )
+#data = main(name, scrap_urls, ignore_list, distance_from,scrape_file, archive_data_file, print_columns ,calculate_points = calculate_points, scoring_map = scoring_map )
+
 data = analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, calculate_points = calculate_points, scoring_map = scoring_map)
 
 #message = "#####NEW: \n" +data["new"] +  "\n######TOP 20:\n" + data["top20"]

@@ -219,6 +219,8 @@ def score_dataset(current_data, scoring_map):
             elif scoring["type"] == "contains":
                 for value in scoring["values"]:
                     current_data.loc[current_data[field].fillna('').str.lower().str.contains(value.lower()),"points"] += scoring["points"]
+            elif scoring["type"] == "lower_than":
+                    current_data.loc[current_data[field] < scoring["value"],"points"] += scoring["points"]
             elif scoring["type"] == "cutoff":
                 cutoff_field = field
 
