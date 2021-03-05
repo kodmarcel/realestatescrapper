@@ -47,9 +47,8 @@ scoring_map = {
 }
 
 calculate_points = None
-#data = main(name, scrap_urls, ignore_list, distance_from,scrape_file, archive_data_file, print_columns ,calculate_points = calculate_points, scoring_map = scoring_map )
-
-data = analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, calculate_points = calculate_points, scoring_map = scoring_map)
+data = main(name, scrap_urls, ignore_list, distance_from,scrape_file, archive_data_file, print_columns ,calculate_points = calculate_points, scoring_map = scoring_map )
+#data = analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, calculate_points = calculate_points, scoring_map = scoring_map)
 
 #message = "#####NEW: \n" +data["new"] +  "\n######TOP 20:\n" + data["top20"]
 #send_mail(gmail_user, gmail_password,to, message)
