@@ -12,10 +12,10 @@ class BolhaSpider(scrapy.Spider):
     name = 'bolha'
     allowed_domains = ['www.bolha.com']
 
-    def __init__(self, url = None, scrape_file = None, export_headers = True, *args, **kwargs):
+    def __init__(self, url = None, run_name = None, export_headers = True, *args, **kwargs):
         super(BolhaSpider, self).__init__(*args, **kwargs)
         self.start_urls = [url]
-        self.scrape_file = scrape_file
+        self.run_name = run_name 
         self.export_headers = export_headers
 
     def parse(self, response, origin_url = None):

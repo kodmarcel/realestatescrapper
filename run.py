@@ -16,6 +16,7 @@ import json
 import geocoder
 import os
 import smtplib
+import glob
 
 now = datetime.now()
 columns_ordering = ["new","points","price", "location", "size", "url", "distance", "active", "first_capture_date", "last_capture_date", "found_location", "built", "floor", "page", "text"]
@@ -47,7 +48,7 @@ default_scoring_map = {
     },
 }
 
-def execute_spiders(urls, scrape_file):
+def execute_spiders(urls, run_name):
 
     process = CrawlerProcess(get_project_settings())
 
@@ -63,7 +64,7 @@ def execute_spiders(urls, scrape_file):
             continue
         spider = process.create_crawler(spider_name)
         spiders.append(spider)
-        process.crawl(spider, url = url, scrape_file = scrape_file, export_headers = export_headers)
+        process.crawl(spider, url = url, run_name = run_name, export_headers = export_headers)
         export_headers = False #so only first wil export them
 
     process.start() # the script will block here until the crawling is finished
@@ -77,12 +78,16 @@ def execute_spiders(urls, scrape_file):
         print()
 
 
-def analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, scoring_map = None, calculate_points = None):
+def analyze_data(run_name, ignore_list, distance_from, archive_data_file, print_columns, scoring_map = None, calculate_points = None):
     print("###############")
     print("Getting data for analysis")
 
-
-    scraped_data = pd.read_csv(scrape_file, parse_dates = ["capture_date"])
+    bolha_files = glob.glob('scraped_data/' + run_name + '_bolha_*.csv')
+    nepremicnine_files = glob.glob('scraped_data/' + run_name + '_nepremicnine_*.csv')
+     
+    bolha_data = pd.read_csv(max(bolha_files,key=os.path.getctime), parse_dates = ["capture_date"])
+    nepremicnine_data = pd.read_csv(max(nepremicnine_files,key=os.path.getctime), parse_dates = ["capture_date"])
+    scraped_data = bolha_data.append(nepremicnine_data, ignore_index=True)
     scraped_data["new"] = True
     scraped_data["active"] = True
     scraped_data["first_capture_date"] = scraped_data.capture_date
@@ -126,16 +131,17 @@ def analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_fil
     print("###############")
     print("Finding locations")
     # fix locations
-    center = geocoder.osm(distance_from)
+    if distance_from:
+        center = geocoder.osm(distance_from)
 
-    #get locations
-    found_locations = []
-    current_data.loc[current_data.found_location.isnull(), "found_location"] = current_data[current_data.found_location.isnull()].apply(lambda x: find_location(x.location, center), axis=1)
+        #get locations
+        found_locations = []
+        current_data.loc[current_data.found_location.isnull(), "found_location"] = current_data[current_data.found_location.isnull()].apply(lambda x: find_location(x.location, center), axis=1)
 
-    print("###############")
-    print("Getting distances")
-    # get distance
-    current_data.loc[current_data.distance.isnull(), "distance"] = current_data[current_data.distance.isnull()].apply(lambda x: get_distance(x.found_location, center), axis=1)
+        print("###############")
+        print("Getting distances")
+        # get distance
+        current_data.loc[current_data.distance.isnull(), "distance"] = current_data[current_data.distance.isnull()].apply(lambda x: get_distance(x.found_location, center), axis=1)
 
     print("###############")
     print("Calculating points")
@@ -254,9 +260,7 @@ def send_mail(gmail_user, gmail_password, to, message):
     except:
         print('Something went wrong...')
 
-def main(name, urls, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, mails = None, calculate_points = None, scoring_map = default_scoring_map):
-    if os.path.exists(scrape_file):
-        os.remove(scrape_file)
-    execute_spiders(urls, scrape_file)
-    data = analyze_data(name, ignore_list, distance_from, scrape_file, archive_data_file, print_columns, calculate_points = calculate_points, scoring_map = scoring_map)
+def main(run_name, urls, ignore_list, distance_from, archive_data_file, print_columns, mails = None, calculate_points = None, scoring_map = default_scoring_map):
+    execute_spiders(urls, run_name)
+    data = analyze_data(run_name, ignore_list, distance_from, archive_data_file, print_columns, calculate_points = calculate_points, scoring_map = scoring_map)
     return data

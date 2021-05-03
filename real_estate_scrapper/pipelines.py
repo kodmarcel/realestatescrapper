@@ -27,10 +27,11 @@ class CSVPipeline(object):
     return pipeline
 
   def spider_opened(self, spider):
-    filename = spider.scrape_file if spider.scrape_file else spider.config_name
-    file = open(filename, 'a+b')
+    name = spider.name
+    run_name = spider.run_name 
+    file = open('scraped_data/{}_{}_{}.csv'.format(run_name,name, datetime.datetime.now().strftime("%Y%m%d-%H")) , 'w+b')
     self.files[spider] = file
-    self.exporter = CsvItemExporter(file, spider.export_headers)
+    self.exporter = CsvItemExporter(file, True)
     self.exporter.fields_to_export = column_order
 
     self.exporter.start_exporting()

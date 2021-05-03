@@ -8,7 +8,10 @@ def parseYear(values):
 def parseSize(values):
     for value in values:
         number = value.split(" ")[0].strip().replace(",", ".").replace('"', '')
-        yield float(number)
+        try:
+            yield float(number)
+        except:
+            return
 
 def parsePrice(values):
     for value in values:
